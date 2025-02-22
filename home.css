@@ -7,7 +7,7 @@
   font-family: "Inter", serif;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 /* Navbar */
@@ -146,7 +146,7 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3); 
+  background: rgba(0, 0, 0, 0.3);
 }
 
 /* Hero right side content */
@@ -180,11 +180,9 @@ li {
   animation: typing1 3s steps(40, end) forwards 2s;
 }
 
-
 .line2 {
   animation: typing2 3s steps(40, end) forwards 5s;
 }
-
 
 .hero p.done {
   border-right: none;
@@ -210,32 +208,32 @@ li {
 
 /* Hero left side content */
 
-.hero .left-side-hero{
+.hero .left-side-hero {
   z-index: 1000;
   position: relative;
   top: 150px;
   left: 100px;
 }
 
-.left-side-hero button{
+.left-side-hero button {
   padding: 10px;
   border: none;
   border-radius: 20px;
   margin-right: 20px;
-  transition: .5s ease-in-out;
-  &:hover{
-   transform: translateY(-10px);
-  }
-}
-
-#shop-now{
-  background-color:greenyellow;
-  color: black;
-  font-weight: bold;
-  &:hover{
+  transition: 0.5s ease-in-out;
+  &:hover {
     transform: translateY(-10px);
   }
 }
-#sell-footware:hover{
+
+#shop-now {
+  background-color: greenyellow;
+  color: black;
+  font-weight: bold;
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+#sell-footware:hover {
   background-color: #adb5bd;
 }
