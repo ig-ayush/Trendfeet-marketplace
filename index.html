@@ -13,6 +13,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -56,10 +57,31 @@
     <!-- Hero session -->
 
     <main>
-        <div class="hero">
-            
+        <div class="hero" data-aos="zoom-out-left" data-aos-duration="2000">
+
+          <div class="right-side-hero">
+            <h1 data-aos="fade-up" data-aos-duration="2000">TrendFeet</h1>
+            <h2 data-aos="fade-up" data-aos-duration="3000">Step Into Style with TrendFeet!</h2>
+            <p class="line1">
+              Discover the latest footwear from top brands like Nike, Adidas, and Puma.</p>
+            <p class="line2">
+              Shop, Sell, and Stay in Style – All in One Place.
+            </p>
+          </div>
+
+          <div class="left-side-hero" >
+            <button id="shop-now" data-aos="fade-down"  data-aos-offset="-200" data-aos-duration="1000">Shop Now</button>
+            <button id="sell-footware"  data-aos="fade-down"  data-aos-offset="-200" data-aos-duration="2000">Sell Your Footware</button>
+          </div>
+
         </div>
     </main>
+
+    <h1>HEllo coder</h1>
   </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="home.js"></script>
 </html>

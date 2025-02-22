@@ -7,6 +7,9 @@
   font-family: "Inter", serif;
 }
 
+body{
+  overflow-x: hidden;
+}
 /* Navbar */
 nav {
   height: 50px;
@@ -17,6 +20,9 @@ nav {
   justify-content: space-between;
   padding: 5px;
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .logo img {
@@ -116,16 +122,120 @@ li {
   transition: width 0.3s ease-in-out;
 }
 
-
 .left-content ul li:hover::after {
   width: 100%;
 }
 
 /* Hero session */
-.hero{
-    width: 100%;
-    height: 500px;
-    background: url(Images/hero.png);
-    background-position: center;
-    background-size: cover;
+.hero {
+  width: 100%;
+  height: 500px;
+  background: url(Images/hero.png);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  color: white;
+  padding: 50px;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); 
+}
+
+/* Hero right side content */
+
+.hero .right-side-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  z-index: 100;
+}
+.hero h1 {
+  font-family: "Oswald", serif;
+  font-size: 3rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+}
+
+.hero p {
+  position: relative;
+  top: 80px;
+  font-weight: inherit;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 0;
+}
+
+.line1 {
+  animation: typing1 3s steps(40, end) forwards 2s;
+}
+
+
+.line2 {
+  animation: typing2 3s steps(40, end) forwards 5s;
+}
+
+
+.hero p.done {
+  border-right: none;
+}
+
+@keyframes typing1 {
+  from {
+    max-width: 0;
+  }
+  to {
+    max-width: 100%;
+  }
+}
+
+@keyframes typing2 {
+  from {
+    max-width: 0;
+  }
+  to {
+    max-width: 100%;
+  }
+}
+
+/* Hero left side content */
+
+.hero .left-side-hero{
+  z-index: 1000;
+  position: relative;
+  top: 150px;
+  left: 100px;
+}
+
+.left-side-hero button{
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  margin-right: 20px;
+  transition: .5s ease-in-out;
+  &:hover{
+   transform: translateY(-10px);
+  }
+}
+
+#shop-now{
+  background-color:greenyellow;
+  color: black;
+  font-weight: bold;
+  &:hover{
+    transform: translateY(-10px);
+  }
+}
+#sell-footware:hover{
+  background-color: #adb5bd;
 }
