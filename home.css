@@ -116,7 +116,7 @@ li {
   transition: width 0.3s ease-in-out;
 }
 
-/* Hover Effect: Expand Line */
+
 .left-content ul li:hover::after {
   width: 100%;
 }
