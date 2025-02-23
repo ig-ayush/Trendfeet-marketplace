@@ -1,7 +1,9 @@
 setTimeout(() => {
     document.querySelector('.line1').classList.add('done');
-}, 3000); // After first line
+}, 3000); 
 
 setTimeout(() => {
     document.querySelector('.line2').classList.add('done');
-}, 6000); // After second line
+}, 6000); 
+
+
