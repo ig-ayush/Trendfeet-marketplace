@@ -240,7 +240,7 @@ li {
 
 /* Brand section */
 
-/* General styling for brand cards */
+
 .nike, .adidas, .puma {
   width: 25%;
   height: 280px;
@@ -248,10 +248,10 @@ li {
   border-radius: 10px;
   margin-top: 20px;
   position: relative;
-  overflow: hidden; /* Prevents text overflow */
+  overflow: hidden; 
 }
 
-/* Container for brand cards */
+
 .brands {
   display: flex;
   justify-content: center;
@@ -259,7 +259,6 @@ li {
   padding: 10px;
 }
 
-/* Individual brand backgrounds */
 .nike {
   background: url(Images/Nike.jpg);
   background-position: center;
@@ -281,10 +280,10 @@ li {
   background-repeat: no-repeat;
 }
 
-/* Common styling for hidden text */
+
 .brand-content {
   position: absolute;
-  bottom: -100%; /* Initially hidden below */
+  bottom: -100%; 
   width: 100%;
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -293,7 +292,7 @@ li {
   transition: bottom 0.8s ease-in-out;
 }
 
-/* Show text when hovering over the card */
+
 .nike:hover .brand-content,
 .adidas:hover .brand-content,
 .puma:hover .brand-content {
@@ -309,12 +308,12 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0); /* Initially transparent */
+  background: rgba(0, 0, 0, 0); 
   transition: background 0.4s ease-in-out;
 }
 
 .nike:hover::before,
 .adidas:hover::before,
 .puma:hover::before {
-  background: rgba(79, 78, 78, 0.5); /* Darken the background */
+  background: rgba(79, 78, 78, 0.5);
 }
