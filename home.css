@@ -335,14 +335,38 @@ li {
 
 .img{
   width: 100%;
-  height: 50%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 70%;
 }
 
-.img-1{background: url(Images/free-shipping.png);}
-.img-2{background: url(Images/online-order.png);}
-.img-3{background: url(Images/happy-sell.png);}
-.img-4{background: url(Images/pramotion.png);}
-.img-5{background: url(Images/save-money.png);}
+/* images for service section */
+
+.img-1{
+  background: url(Images/free-shipping.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.img-2{
+  background: url(Images/online-order.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.img-3{
+  background: url(Images/happy-sell.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.img-4{
+  background: url(Images/pramotion.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.img-5{
+  background: url(Images/save-money.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
