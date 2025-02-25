@@ -316,3 +316,33 @@ li {
 .puma:hover::before {
   background: rgba(79, 78, 78, 0.5);
 }
+
+/* servie section */
+.service{
+  width: 15%;
+  height: 200px;
+  padding: 10px;
+  box-shadow: 10px 10px 40px rgba(220, 217, 217, 0.5);
+  border-radius: 20px;
+}
+
+.services{
+  margin: 50px 50px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.img{
+  width: 100%;
+  height: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-1{background: url(Images/free-shipping.png);}
+.img-2{background: url(Images/online-order.png);}
+.img-3{background: url(Images/happy-sell.png);}
+.img-4{background: url(Images/pramotion.png);}
+.img-5{background: url(Images/save-money.png);}
