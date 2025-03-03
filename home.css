@@ -375,4 +375,13 @@ li {
   margin-top: 16px;
   margin-left: 37px;
   font-size: 0.7rem;
+  width: max-content;
+  padding: 5px;
+  border-radius: 3px;
 }
+
+.s-1 p{background-color: #BFDBFE;}
+.s-2 p{background-color: #FECACA;}
+.s-3 p{background-color: #D8B4FE;}
+.s-4 p{background-color: #60A5FA;}
+.s-5 p{background-color: #BBF7D0;}
