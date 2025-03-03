@@ -330,6 +330,7 @@ li {
   margin: 50px 50px;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 50px;
 }
 
@@ -369,4 +370,10 @@ li {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.service p{
+  margin-top: 16px;
+  margin-left: 37px;
+  font-size: 0.7rem;
 }
