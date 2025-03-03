@@ -240,16 +240,17 @@ li {
 
 /* Brand section */
 
-.nike, .adidas, .puma {
+.nike,
+.adidas,
+.puma {
   width: 25%;
   height: 280px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   margin-top: 20px;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
-
 
 .brands {
   display: flex;
@@ -279,10 +280,9 @@ li {
   background-repeat: no-repeat;
 }
 
-
 .brand-content {
   position: absolute;
-  bottom: -100%; 
+  bottom: -100%;
   width: 100%;
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -290,7 +290,6 @@ li {
   text-align: center;
   transition: bottom 0.8s ease-in-out;
 }
-
 
 .nike:hover .brand-content,
 .adidas:hover .brand-content,
@@ -307,7 +306,7 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0); 
+  background: rgba(0, 0, 0, 0);
   transition: background 0.4s ease-in-out;
 }
 
@@ -318,7 +317,7 @@ li {
 }
 
 /* servie section */
-.service{
+.service {
   width: 15%;
   height: 200px;
   padding: 10px;
@@ -326,7 +325,7 @@ li {
   border-radius: 20px;
 }
 
-.services{
+.services {
   margin: 50px 50px;
   display: flex;
   justify-content: center;
@@ -334,45 +333,45 @@ li {
   gap: 50px;
 }
 
-.img{
+.img {
   width: 100%;
   height: 70%;
 }
 
 /* images for service section */
 
-.img-1{
+.img-1 {
   background: url(Images/free-shipping.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
-.img-2{
+.img-2 {
   background: url(Images/online-order.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.img-3{
+.img-3 {
   background: url(Images/happy-sell.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.img-4{
+.img-4 {
   background: url(Images/pramotion.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.img-5{
+.img-5 {
   background: url(Images/save-money.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.service p{
+.service p {
   margin-top: 16px;
   margin-left: 37px;
   font-size: 0.7rem;
