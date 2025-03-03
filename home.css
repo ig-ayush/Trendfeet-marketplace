@@ -338,7 +338,7 @@ li {
   height: 70%;
 }
 
-/* images for service section */
+/* images and text for service section */
 
 .img-1 {
   background: url(Images/free-shipping.png);
@@ -371,6 +371,7 @@ li {
   background-repeat: no-repeat;
 }
 
+/* Texts in service section */
 .service p {
   margin-top: 16px;
   margin-left: 37px;
