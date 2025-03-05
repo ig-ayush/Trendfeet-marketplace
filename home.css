@@ -386,3 +386,6 @@ li {
 .s-3 p{background-color: #D8B4FE;}
 .s-4 p{background-color: #60A5FA;}
 .s-5 p{background-color: #BBF7D0;}
+
+/* Product section */
+#product-heading{text-align: center;}
