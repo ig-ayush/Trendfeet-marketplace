@@ -1,0 +1,41 @@
+.products{
+    width: 100%;
+    height: max-content;
+    background-color: #e9ecef;
+    padding: 30px 50px 30px 50px ;
+}
+.product{
+    width: 300px;
+    height: max-content;
+    padding: 15px;
+    position: relative;
+}
+.product:hover .image img{
+    transform: scale(.9)
+}
+.product .image img{
+    margin-bottom: 10px;
+    width: 250px;
+    transition: transform .5s ease-in-out;
+}
+.product,.product .image{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.product .brand-name,.product-name{
+    font-weight: 500;
+}
+
+.product .dis{
+    font-size: 500;
+    color: #495057;
+}
+
+.product .mrp{
+    font-weight: 600;
+    margin-top: 8px;
+}
