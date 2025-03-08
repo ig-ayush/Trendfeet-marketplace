@@ -14,7 +14,7 @@
     transform: scale(.9)
 }
 .product .image img{
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     width: 250px;
     transition: transform .5s ease-in-out;
 }
