@@ -1,8 +1,14 @@
-.products{
+.new-arrivals-producs{
     width: 100%;
     height: max-content;
     background-color: #e9ecef;
     padding: 30px 50px 30px 50px ;
+}
+.products{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 .product{
     width: 300px;
@@ -15,7 +21,7 @@
 }
 .product .image img{
     margin-bottom: 8px;
-    width: 250px;
+    width: 230px;
     transition: transform .5s ease-in-out;
 }
 .product,.product .image{
@@ -38,4 +44,31 @@
 .product .mrp{
     font-weight: 600;
     margin-top: 8px;
+}
+.product .style{
+    font-size: .9rem;
+    margin-left: 10px;
+}
+.view{
+    width: 90px;
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 10px;
+    transform: translateY(10px);
+    transition: .4s ease-in-out;
+    opacity: 0;
+}
+
+.product:hover .view{
+    transform: translateY(0);
+    opacity: 1;
+    display: block;
+}
+.view:hover{
+    background-color: #fff;
+    font-weight: 600;
 }
