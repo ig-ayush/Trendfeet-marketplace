@@ -389,3 +389,75 @@ li {
 
 /* Product section */
 #product-heading{text-align: center;}
+
+/* Footer section */
+footer{
+  background-color: #000000;
+  color: white;
+  width: 100%;
+  height: 450px;
+  margin-top: 50px;
+  padding: 40px;
+  overflow-x: hidden;
+}
+.footer-con{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+footer ul li{
+  list-style: none;
+  color: #ced4da;
+}
+footer ul {
+  font-size: .9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .about a{
+  text-decoration: none;
+  color: white;
+  &:hover{
+    color: #8f9091  ;
+  }
+}
+
+.footer-logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo img{
+  width: 100px;
+}
+.footer-logo h1{
+  font-family: "Oswald", serif; 
+}
+
+.brand .explore{
+  display: flex;
+  gap: 15px;
+}
+.brand h3{
+  /* text-align: center ; */
+  margin-bottom: 20px;
+}
+.brand .explore img{
+  width: 80px;
+  border: 1px solid white;
+  border-radius: 10px;
+  transition: .5s;
+  &:hover{
+    border-radius: 0;
+  }
+}
+
+footer p{
+  color: #ced4da;
+  text-align: center;
+  padding: 20px;
+  font-size: .8rem;
+}
