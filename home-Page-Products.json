@@ -26,7 +26,8 @@
             "Images/products/nike-new2-3.png",
             "Images/products/nike-new2-4.png",
             "Images/products/nike-new2-5.png"
-        ]
+        ],
+        "link":"https://www.nike.com/in/t/pegasus-road-running-shoes-xzQQKz/HQ2592-100"
     },
     {
         "id":3,
@@ -40,7 +41,8 @@
             "Images/products/nike-new3-3.png",
             "Images/products/nike-new3-4.png",
             "Images/products/nike-new3-5.png"
-        ]
+        ],
+        "link":"https://www.nike.com/in/t/zion-4-pf-basketball-shoes-X2d9C7/FD0591-800"
     },
     {
         "id":4,
@@ -54,7 +56,8 @@
             "Images/products/nike-new4-3.png",
             "Images/products/nike-new4-4.png",
             "Images/products/nike-new4-5.png"
-        ]
+        ],
+        "link":"https://www.nike.com/in/t/c1ty-shoes-445XbQ/FZ3863-010"
     },
     {
         "id":5,
