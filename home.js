@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const view = (id) =>{
-  // window.location.href = `SinglePRoduct.html?id=${id}`;
+  window.location.href = `./src/Single-Product/SinglePRoduct.html?id=${id}`;
   console.log(id);
 }
 
