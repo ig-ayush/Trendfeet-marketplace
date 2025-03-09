@@ -101,7 +101,8 @@
          "Images/products/puma-new2-3.avif",  
          "Images/products/puma-new2-4.avif", 
          "Images/products/puma-new2-5.avif"   
-        ]
+        ],
+        "link":"https://in.puma.com/in/en/pd/palermo-lth-unisex-sneakers/396464?search=true&swatch=12"
     },
     {
         "id":8,
@@ -114,6 +115,7 @@
             "Images/products/puma-new1-2.avif",
             "Images/products/puma-new1-3.avif",
             "Images/products/puma-new1-4.avif"
-        ]
+        ],
+        "link":"https://in.puma.com/in/en/pd/suede-xl-unisex-sneakers/395205?swatch=03"
     }
 ]
