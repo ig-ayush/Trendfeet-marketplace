@@ -1,0 +1,16 @@
+[
+    {
+        "id":1,
+        "brand": "Nike",
+        "product-name":"Nike Air Max Dn8",
+        "dis": "Older Kids' Shoes",
+        "price": "₹17,495",
+        "images": [
+            "Images/products/nike-new-1.png",
+            "Images/products/nike-new-2.png",
+            "Images/products/nike-new-3.png",
+            "Images/products/nike-new-4.png",
+            "Images/products/nike-new-5.png"
+        ]
+    }
+]
