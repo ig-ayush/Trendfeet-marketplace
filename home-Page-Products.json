@@ -2,7 +2,7 @@
     {
         "id":1,
         "brand": "Nike",
-        "product-name":"Nike Air Max Dn8",
+        "product_name":"Nike Air Max Dn8",
         "dis": "Older Kids' Shoes",
         "price": "₹17,495",
         "images": [
@@ -11,6 +11,34 @@
             "Images/products/nike-new-3.png",
             "Images/products/nike-new-4.png",
             "Images/products/nike-new-5.png"
+        ]
+    },
+    {
+        "id":2,
+        "brand": "Nike",
+        "product_name":"Nike Pegasus Premium",
+        "dis": "Men's Road Running Shoes",
+        "price": "₹19,295",
+        "images": [
+            "Images/products/nike-new2-1.png",
+            "Images/products/nike-new2-2.png",
+            "Images/products/nike-new2-3.png",
+            "Images/products/nike-new2-4.png",
+            "Images/products/nike-new2-5.png"
+        ]
+    },
+    {
+        "id":3,
+        "brand": "Nike",
+        "product_name":"Zion 4 PF",
+        "dis": "Basketball Shoes",
+        "price": "₹12,795",
+        "images": [
+            "Images/products/nike-new3-1.png",
+            "Images/products/nike-new3-2.png",
+            "Images/products/nike-new3-3.png",
+            "Images/products/nike-new3-4.png",
+            "Images/products/nike-new3-5.png"
         ]
     }
 ]
