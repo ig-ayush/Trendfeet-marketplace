@@ -23,12 +23,17 @@ document.addEventListener("DOMContentLoaded", function () {
             <h3 class="product-name style">${product.product_name}</h3>
             <h5 class="dis style">${product.dis}</h5>
             <h3 class="mrp style">MRP: ${product.price}</h3>
-            <button class="view">View</button>
+            <button class="view" onclick="view(${product.id})">View</button>
           </div>`
       );
     })
     .catch((error) => console.error("Error loading products", error));
 });
+
+const view = (id) =>{
+  // window.location.href = `SinglePRoduct.html?id=${id}`;
+  console.log(id);
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   const toggleSwitch = document.querySelector(".switch input");
