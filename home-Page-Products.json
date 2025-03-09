@@ -40,5 +40,74 @@
             "Images/products/nike-new3-4.png",
             "Images/products/nike-new3-5.png"
         ]
+    },
+    {
+        "id":4,
+        "brand": "Nike",
+        "product_name":"Nike C1TY",
+        "dis": "Shoes",
+        "price": "₹8,695",
+        "images": [
+            "Images/products/nike-new4-1.png",
+            "Images/products/nike-new4-2.png",
+            "Images/products/nike-new4-3.png",
+            "Images/products/nike-new4-4.png",
+            "Images/products/nike-new4-5.png"
+        ]
+    },
+    {
+        "id":5,
+        "brand": "Adidas",
+        "product_name":"SL 72 RS Shoes",
+        "dis": "originals",
+        "price": "₹9,999",
+        "images": [
+            "Images/products/adidas-new1-1.avif",
+            "Images/products/adidas-new1-2.avif",
+            "Images/products/adidas-new1-3.avif",
+            "Images/products/adidas-new1-4.avif",
+            "Images/products/adidas-new1-5.avif"
+        ]
+    },
+    {
+        "id":6,
+        "brand": "Adidas",
+        "product_name":"GRAND COURT 2.0 SHOES",
+        "dis": "Men • Sportswear",
+        "price": "₹7,999",
+        "images": [
+            "Images/products/adidas-new3-1.avif",
+            "Images/products/adidas-new3-2.avif",
+            "Images/products/adidas-new3-3.avif",
+            "Images/products/adidas-new3-4.avif",
+            "Images/products/adidas-new3-5.avif"
+        ]
+    },
+    {
+        "id":7,
+        "brand": "PUMA",
+        "product_name":"Palermo Lth Unisex Sneakers",
+        "dis": "Alpine Snow-Desert Dust-Gum",
+        "price": "₹6,999",
+        "images": [
+         "Images/products/puma-new2-1.avif",   
+         "Images/products/puma-new2-1.avif",   
+         "Images/products/puma-new2-1.avif",  
+         "Images/products/puma-new2-1.avif", 
+         "Images/products/puma-new2-1.avif"   
+        ]
+    },
+    {
+        "id":8,
+        "brand": "PUMA",
+        "product_name":"CRINU 24",
+        "dis": "Cricket",
+        "price": "₹4,799",
+        "images": [
+            "Images/products/puma-new1-1.avif",
+            "Images/products/puma-new1-2.avif",
+            "Images/products/puma-new1-3.avif",
+            "Images/products/puma-new1-4.avif"
+        ]
     }
 ]
