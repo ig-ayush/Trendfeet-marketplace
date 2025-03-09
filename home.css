@@ -18,7 +18,6 @@ nav {
   height: 50px;
   width: 100%;
   background-color: #e5e5e5;
-  /* background-color: #000814; */
   display: flex;
   justify-content: space-between;
   padding: 5px;
@@ -132,7 +131,7 @@ li {
 /* Hero session */
 .hero {
   width: 100%;
-  height: 600px;
+  height: 700px;
   background: url(Images/hero.png);
   background-position: center;
   background-size: cover;
@@ -468,7 +467,6 @@ footer p{
 /* modes */
 /* Default Light Mode Styles */
 
-
 /* Dark Mode Styles */
 body.dark-mode {
   background-color: #121212;
@@ -497,6 +495,9 @@ body.dark-mode .puma {
   box-shadow: 10px 10px 20px rgba(49, 47, 47, 0.3);
 }
 
+.dark-mode .brand-content{
+  color: #000000;
+}
 body.dark-mode .service{
   box-shadow: 10px 10px 20px rgba(49, 47, 47, 0.3);
   color: #000000;
