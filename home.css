@@ -9,6 +9,9 @@
 
 body {
   overflow-x: hidden;
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
 }
 /* Navbar */
 nav {
@@ -461,3 +464,62 @@ footer p{
   padding: 20px;
   font-size: .8rem;
 }
+
+/* modes */
+/* Default Light Mode Styles */
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Navbar */
+body.dark-mode nav {
+  background-color: #1f1f1f;
+}
+
+/* Links */
+body.dark-mode a {
+  color: #ffffff;
+}
+
+/* Footer */
+body.dark-mode footer {
+  background-color: #181818;
+}
+
+/* Brand section */
+body.dark-mode .nike,
+body.dark-mode .adidas,
+body.dark-mode .puma {
+  box-shadow: 10px 10px 20px rgba(49, 47, 47, 0.3);
+}
+
+body.dark-mode .service{
+  box-shadow: 10px 10px 20px rgba(49, 47, 47, 0.3);
+  color: #000000;
+}
+
+/*Product  */
+body.dark-mode .products {
+  background-color: #1e1e1e;
+  color: white;
+}
+body.dark-mode .new-arrivals-producs{
+  background-color: #1e1e1e;
+  color: white;
+
+}
+
+/* Dark Mode for Buttons */
+body.dark-mode button {
+  background-color: #333;
+  color: white;
+}
+/* Dark Mode Toggle Button */
+.switch input:checked + .slider {
+  background-color: #0974f1;
+}
+
