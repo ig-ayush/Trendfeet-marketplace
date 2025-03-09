@@ -30,10 +30,10 @@ document.addEventListener("DOMContentLoaded", function () {
     .catch((error) => console.error("Error loading products", error));
 });
 
-const view = (id) =>{
+const view = (id) => {
   window.location.href = `./src/Single-Product/SinglePRoduct.html?id=${id}`;
   console.log(id);
-}
+};
 
 document.addEventListener("DOMContentLoaded", function () {
   const toggleSwitch = document.querySelector(".switch input");
