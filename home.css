@@ -515,8 +515,8 @@ body.dark-mode .new-arrivals-producs{
 
 /* Dark Mode for Buttons */
 body.dark-mode button {
-  background-color: #333;
-  color: white;
+  background-color: #fff;
+  color: #000000;
 }
 /* Dark Mode Toggle Button */
 .switch input:checked + .slider {
