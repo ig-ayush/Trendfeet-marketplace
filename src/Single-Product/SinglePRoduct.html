@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrendFeet</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="SingleProduct.css" />
+    <link rel="stylesheet" href="../../home.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="left-content">
+        <div class="logo">
+          <img src="../../Images/logo.png" alt="logo" />
+          <h3>TrendFeet</h3>
+        </div>
+
+        <ul>
+          <li><a href="../../index.html" class="active">Home</a></li>
+          <li><a href="#">Nike</a></li>
+          <li><a href="#">Adidas</a></li>
+          <li><a href="#">Puma</a></li>
+        </ul>
+      </div>
+      <div class="right-content">
+        <ul>
+          <li>
+            <a href="#" title="cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" title="profile">
+              <i class="fa-solid fa-user"></i>
+            </a>
+          </li>
+          <li>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Product -->
+    <main>
+      <div class="container" id="container">
+        <div class="single-product">
+          <div class="product-images">
+            <img src="../../Images/products/adidas-new1-1.avif" alt="" />
+            <img src="../../Images/products/adidas-new1-2.avif" alt="" />
+            <img src="../../Images/products/adidas-new1-3.avif" alt="" />
+            <img src="../../Images/products/adidas-new1-4.avif" alt="" />
+            <img src="../../Images/products/adidas-new1-5.avif" alt="" />
+          </div>
+
+          <div class="main-image">
+            <p><i class="fa-solid fa-star"></i> Must-Have</p>
+            <img src="../../Images/products/adidas-new1-1.avif" alt="" />
+          </div>
+
+          <div class="product-details">
+            <section>
+              <h3 id="brand">Nike</h3>
+              <h2 id="product-name">Nike Jordon</h2>
+              <h4 id="disc">mens shows</h4>
+            </section>
+            <h2 id="price">MRP: $4000</h2>
+            <section id="other">
+              <p>Inclusive of all taxes</p>
+              <p>(Also includes all applicable duties)</p>
+            </section>
+            <div class="buttons">
+              <button id="buy-now">Buy now</button>
+              <button id="cart">Add to Cart</button>
+            </div>
+            <hr />
+            <h3>Size</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="SingleProduct.js"></script>
+</html>
