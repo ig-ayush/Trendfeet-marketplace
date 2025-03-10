@@ -68,6 +68,10 @@
   width: max-content;
   padding: 15px;
   border: 1px solid;
+  transition: .3s ;
+  &:hover{
+    background-color: #c9cbce;
+  }
 }
 
 .product-details .buttons{
