@@ -110,3 +110,9 @@
     text-decoration: none;
     color: #fff;
 }
+
+body.dark-mode .main-image p{
+  background-color: #000000;
+  color: #fff;
+  border: 1px solid white;
+}
