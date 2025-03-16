@@ -28,5 +28,35 @@
             "Images/Pro2-sub-5.png"
         ],
         "link":"https://www.nike.com/in/t/jordan-stadium-90-shoes-Jn6ZH4/DX4397-121"
+    },
+    {
+        "id":11,
+        "brand": "Nike",
+        "product_name":"Air Jordan 1 Mid",
+        "dis": "Men's Shoes",
+        "price": "₹11,495",
+        "images": [
+            "Images/Pro3-sub-1.png",
+            "Images/Pro3-sub-2.png",
+            "Images/Pro3-sub-3.png",
+            "Images/Pro3-sub-4.png",
+            "Images/Pro3-sub-5.png"
+        ],
+        "link":"https://www.nike.com/in/t/air-jordan-1-mid-shoes-SQf7DM/DQ8426-402"
+    },
+    {
+        "id":12,
+        "brand": "Nike",
+        "product_name":"Jordan Hydro 5 Retro",
+        "dis": "Men's Shoes",
+        "price": "₹ 4,995",
+        "images": [
+            "Images/Pro4-sub-1.png",
+            "Images/Pro4-sub-2.png",
+            "Images/Pro4-sub-3.png",
+            "Images/Pro4-sub-4.png",
+            "Images/Pro4-sub-5.png"
+        ],
+        "link":"https://www.nike.com/in/t/jordan-hydro-5-retro-slides-4RSDz1/555501-061"
     }
 ]
