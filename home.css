@@ -67,6 +67,9 @@ li {
   font-size: 1.4rem;
 }
 
+.active {
+  border-bottom: 1px solid;
+}
 /* Dark and light mode  */
 
 .switch {
