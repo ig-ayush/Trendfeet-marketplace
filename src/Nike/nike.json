@@ -13,5 +13,20 @@
             "Images/Pro1-sub-5.png"
         ],
         "link":"https://www.nike.com/in/t/air-jordan-4-rm-shoes-NNlJjc/FQ7939-060"
+    },
+    {
+        "id":10,
+        "brand": "Nike",
+        "product_name":"Jordan Stadium 90",
+        "dis": "Men's Shoes",
+        "price": "₹12,795",
+        "images": [
+            "Images/Pro2-sub-1.png",
+            "Images/Pro2-sub-2.png",
+            "Images/Pro2-sub-3.png",
+            "Images/Pro2-sub-4.png",
+            "Images/Pro2-sub-5.png"
+        ],
+        "link":"https://www.nike.com/in/t/jordan-stadium-90-shoes-Jn6ZH4/DX4397-121"
     }
 ]
