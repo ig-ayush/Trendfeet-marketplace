@@ -129,6 +129,10 @@ li {
   width: 100%;
 }
 
+.active {
+  border-bottom: 1px solid;
+}
+
 /* Hero session */
 .hero {
   width: 100%;
