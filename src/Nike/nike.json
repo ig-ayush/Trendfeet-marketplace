@@ -4,7 +4,7 @@
         "brand": "Nike",
         "product_name":"Air Jordan 4 RM",
         "dis": "Men's Shoes",
-        "price": "₹12,795",
+        "price": "₹ 12,795",
         "images": [
             "Images/Pro1-sub-1.png",
             "Images/Pro1-sub-2.png",
@@ -19,7 +19,7 @@
         "brand": "Nike",
         "product_name":"Jordan Stadium 90",
         "dis": "Men's Shoes",
-        "price": "₹12,795",
+        "price": "₹ 12,795",
         "images": [
             "Images/Pro2-sub-1.png",
             "Images/Pro2-sub-2.png",
@@ -34,7 +34,7 @@
         "brand": "Nike",
         "product_name":"Air Jordan 1 Mid",
         "dis": "Men's Shoes",
-        "price": "₹11,495",
+        "price": "₹ 11,495",
         "images": [
             "Images/Pro3-sub-1.png",
             "Images/Pro3-sub-2.png",
@@ -58,5 +58,65 @@
             "Images/Pro4-sub-5.png"
         ],
         "link":"https://www.nike.com/in/t/jordan-hydro-5-retro-slides-4RSDz1/555501-061"
+    },
+    {
+        "id":13,
+        "brand": "Nike",
+        "product_name":"Air Jordan Mule",
+        "dis": "Golf Shoes",
+        "price": "₹ 8,695",
+        "images": [
+            "Images/Pro5-sub-1.png",
+            "Images/Pro5-sub-2.png",
+            "Images/Pro5-sub-3.png",
+            "Images/Pro5-sub-4.png",
+            "Images/Pro5-sub-5.png"
+        ],
+        "link":"https://www.nike.com/in/t/air-jordan-mule-golf-shoes-RHRFBC/FJ1214-102"
+    },
+    {
+        "id":14,
+        "brand": "Nike",
+        "product_name":"Jumpman MVP",
+        "dis": "Men's Shoes",
+        "price": "₹ 15,295",
+        "images": [
+            "Images/Pro6-sub-1.png",
+            "Images/Pro6-sub-2.png",
+            "Images/Pro6-sub-3.png",
+            "Images/Pro6-sub-4.png",
+            "Images/Pro6-sub-5.png"
+        ],
+        "link":"https://www.nike.com/in/t/jumpman-mvp-shoes-JV1HCs/DZ4475-102"
+    },
+    {
+        "id":15,
+        "brand": "Nike",
+        "product_name":"Jordan Roam",
+        "dis": "Slides",
+        "price": "₹ 4,195",
+        "images": [
+            "Images/Pro8-sub-1.png",
+            "Images/Pro8-sub-2.png",
+            "Images/Pro8-sub-3.png",
+            "Images/Pro8-sub-4.png",
+            "Images/Pro8-sub-5.png"
+        ],
+        "link":"https://www.nike.com/in/t/jordan-roam-slides-XsQbqX/FQ0227-300"
+    },
+    {
+        "id":16,
+        "brand": "Nike",
+        "product_name":"Jordan One Take 5 PF",
+        "dis": "Men's Shoes",
+        "price": "₹ 8,695",
+        "images": [
+            "Images/Pro7-sub-1.png",
+            "Images/Pro7-sub-2.png",
+            "Images/Pro7-sub-3.png",
+            "Images/Pro7-sub-4.png",
+            "Images/Pro7-sub-5.png"
+        ],
+        "link":"https://www.nike.com/in/t/jordan-one-take-5-pf-shoes-jNx9SV/FD2336-101"
     }
 ]
