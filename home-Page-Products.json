@@ -4,7 +4,7 @@
         "brand": "Nike",
         "product_name":"Nike Air Max Dn8",
         "dis": "Older Kids' Shoes",
-        "price": "₹17,495",
+        "price": "₹ 17,495",
         "images": [
             "Images/products/nike-new-1.png",
             "Images/products/nike-new-2.png",
@@ -19,7 +19,7 @@
         "brand": "Nike",
         "product_name":"Nike Pegasus Premium",
         "dis": "Men's Road Running Shoes",
-        "price": "₹19,295",
+        "price": "₹ 19,295",
         "images": [
             "Images/products/nike-new2-1.png",
             "Images/products/nike-new2-2.png",
@@ -34,7 +34,7 @@
         "brand": "Nike",
         "product_name":"Zion 4 PF",
         "dis": "Basketball Shoes",
-        "price": "₹12,795",
+        "price": "₹ 12,795",
         "images": [
             "Images/products/nike-new3-1.png",
             "Images/products/nike-new3-2.png",
@@ -49,7 +49,7 @@
         "brand": "Nike",
         "product_name":"Nike C1TY",
         "dis": "Shoes",
-        "price": "₹8,695",
+        "price": "₹ 8,695",
         "images": [
             "Images/products/nike-new4-1.png",
             "Images/products/nike-new4-2.png",
@@ -64,7 +64,7 @@
         "brand": "Adidas",
         "product_name":"SL 72 RS Shoes",
         "dis": "originals",
-        "price": "₹9,999",
+        "price": "₹ 9,999",
         "images": [
             "Images/products/adidas-new1-1.avif",
             "Images/products/adidas-new1-2.avif",
@@ -79,7 +79,7 @@
         "brand": "Adidas",
         "product_name":"GRAND COURT 2.0 SHOES",
         "dis": "Men • Sportswear",
-        "price": "₹7,999",
+        "price": "₹ 7,999",
         "images": [
             "Images/products/adidas-new3-1.avif",
             "Images/products/adidas-new3-2.avif",
@@ -94,7 +94,7 @@
         "brand": "PUMA",
         "product_name":"Palermo Lth Unisex Sneakers",
         "dis": "Alpine Snow-Desert Dust-Gum",
-        "price": "₹6,999",
+        "price": "₹ 6,999",
         "images": [
          "Images/products/puma-new2-1.avif",   
          "Images/products/puma-new2-2.avif",   
@@ -109,7 +109,7 @@
         "brand": "PUMA",
         "product_name":"CRINU 24",
         "dis": "Cricket",
-        "price": "₹4,799",
+        "price": "₹ 4,799",
         "images": [
             "Images/products/puma-new1-1.avif",
             "Images/products/puma-new1-2.avif",
