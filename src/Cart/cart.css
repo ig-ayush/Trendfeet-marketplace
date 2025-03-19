@@ -1,0 +1,98 @@
+body {
+  overflow-x: hidden;
+}
+.container {
+  margin-top: 50px;
+  width: 100%;
+  height: 90vh;
+  padding: 50px;
+  display: grid;
+  justify-content: center;
+  gap: 40px;
+  grid-template-columns: repeat(2, 50%);
+  background-color: #e9ecef;
+}
+
+.product {
+  width: 600px;
+  height: 310px;
+  background-color: #fff;
+  display: flex;
+  padding: 5px;
+}
+
+.image {
+  margin-right: 20px;
+  width: max-content;
+  padding: 0;
+  display: flex;
+  background-color: #e9ecef;
+}
+.product .image img {
+  width: 230px;
+  height: 300px;
+}
+.details {
+  width: 100%;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.details div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.details #brand {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.details #product-name,
+#disc,
+#price {
+  font-weight: 500;
+}
+
+.details #disc,
+#other {
+  color: #8f9091;
+}
+
+.buttons{
+    margin-top: 20px;
+    padding: 10px 20px 20px 20px ;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button{
+    border: none;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.buttons .chekout{
+    width: 135px;
+    background-color: #000000;
+    color: white;
+    font-weight: 600;
+    transition: .5s ease-in-out;
+    &:hover{
+        transform: translateX(-10px);
+    }
+}
+
+.buttons .view{
+    width: 100px;
+    bottom: 10px;
+    right: 8px;
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid;
+    transition: .4s ease-in-out;
+    &:hover{
+        border-radius: 10px;
+        background-color: #e9ecef;
+    }
+}
