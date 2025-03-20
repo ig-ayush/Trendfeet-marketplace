@@ -62,5 +62,3 @@ const view = (id) => {
   window.location.href = `../Single-Product/SinglePRoduct.html?id=${id}`;
   console.log(id);
 };
-
-//   Single product
