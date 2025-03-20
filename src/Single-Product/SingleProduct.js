@@ -143,6 +143,10 @@ function changeImageNike(image) {
 function addToCart(product) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+  let exixtedProduct = cart.find(item => item.id == product.id);
+
+  if(exixtedProduct) return;
+  
   if (product.id <= 8) {
     product.images[0] = `../../${product.images[0]}`;
   } else if (product.id <= 32) {

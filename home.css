@@ -522,6 +522,7 @@ body.dark-mode button {
   background-color: #fff;
   color: #000000;
 }
+
 /* Dark Mode Toggle Button */
 .switch input:checked + .slider {
   background-color: #0974f1;

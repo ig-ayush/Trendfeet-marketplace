@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   overflow-x: hidden;
 }
@@ -8,13 +13,13 @@ body {
   padding: 50px;
   display: grid;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
   grid-template-columns: repeat(2, 50%);
   background-color: #e9ecef;
 }
 
 .product {
-  width: 600px;
+  width: 650px;
   height: 310px;
   background-color: #fff;
   display: flex;
@@ -40,10 +45,13 @@ body {
   gap: 8px;
 }
 
-.details div{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+.details div {
+  display: grid;
+  grid-template-columns: repeat(2, 60% 40%);
+  margin-bottom: 10px;
+}
+.details div #price {
+  text-align: right;
 }
 .details #brand {
   font-weight: 500;
@@ -60,39 +68,63 @@ body {
   color: #8f9091;
 }
 
-.buttons{
-    margin-top: 20px;
-    padding: 10px 20px 20px 20px ;
-    display: flex;
-    justify-content: space-between;
+.buttons {
+  margin-top: 20px;
+  padding: 10px 20px 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.buttons button{
-    border: none;
-    padding: 10px;
-    font-size: 1.1rem;
-}
-
-.buttons .chekout{
-    width: 135px;
-    background-color: #000000;
-    color: white;
-    font-weight: 600;
-    transition: .5s ease-in-out;
-    &:hover{
-        transform: translateX(-10px);
-    }
+.buttons button {
+  border: none;
+  padding: 10px;
+  font-size: 1.1rem;
 }
 
-.buttons .view{
-    width: 100px;
-    bottom: 10px;
-    right: 8px;
-    padding: 5px;
-    background-color: transparent;
-    border: 1px solid;
-    transition: .4s ease-in-out;
-    &:hover{
-        border-radius: 10px;
-        background-color: #e9ecef;
-    }
+.buttons .chekout {
+  width: 135px;
+  background-color: #000000;
+  color: white;
+  font-weight: 600;
+  transition: 0.5s ease-in-out;
+  &:hover {
+    transform: translateX(-10px);
+  }
+}
+
+.buttons #remove i {
+  font-size: 1.8rem;
+  color: #ff4500;
+  margin-top: 10px;
+  &:hover {
+    color: #ff0000;
+  }
+}
+
+.clear{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clear button{
+  margin-top: 50px;
+  padding: 10px;
+  width: 100px;
+  border: none;
+  background-color: #000000;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  transition: .5s ease-in-out;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+body.dark-mode #product-name,#price,#brand{
+  color: #000000;
 }
