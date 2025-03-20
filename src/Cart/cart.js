@@ -35,40 +35,45 @@ document.addEventListener("DOMContentLoaded", function () {
 //   Products
 
 document.addEventListener("DOMContentLoaded", () => {
-  display();
+  displayCart();
 });
 
-function display() {
-  let cart = JSON.parse(localStorage.getItem("Cart")) || [];
+function displayCart() {
+  console.log("cart");
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  let container = document.querySelector(".container");
 
-  const container = document.querySelector(".container");
-
-  if (cart.length == 0) {
-    container.innerHTML = "<h1>Emty Item<h1/>";
+  if (cart.length === 0) {
+    container.innerHTML = "<p>Your cart is empty.</p>";
     return;
   }
 
-  // container.innerHTML = cart.map((products,index)=>{})
-  //     `
-  //     <div class="product">
-  //       <div class="image">
-  //         <img src="../../src/Nike/${products.images[0]}" alt="" />
-  //       </div>
-  //       <div class="details">
-  //         <div>
-  //           <h2 id="product-name">${product_name}</h2>
-  //           <h2 id="price">${products.price}</h2>
-  //         </div>
-  //         <h3 id="brand">${products.brand}</h3>
-  //         <h4 id="disc">${products.dis}</h4>
-  //         <section id="other">
-  //           <p>Inclusive of all taxes</p>
-  //           <p>(Also includes all applicable duties)</p>
-  //         </section>
-  //         <section class="buttons" id="buttons">
-  //             <button class="chekout">CHECKOUT</button>
-  //             <button class="view" >View</button>
-  //         </section>
-  //       </div>
-  //     `;
+  container.innerHTML = cart
+    .map(
+      (product, index) =>
+        `
+    <div class="product">
+      <div class="image">
+        <img src="${product.images[0]}" alt="" />
+      </div>
+      <div class="details">
+        <div>
+          <h2 id="product-name">${product.product_name}</h2>
+          <h2 id="price">${product.price}</h2>
+        </div>
+        <h3 id="brand">${product.brand}</h3>
+        <h4 id="disc">${product.dis}</h4>
+        <section id="other">
+          <p>Inclusive of all taxes</p>
+          <p>(Also includes all applicable duties)</p>
+        </section>
+        <section class="buttons" id="buttons">
+            <button class="chekout">CHECKOUT</button>
+            <button class="view" >View</button>
+        </section>
+      </div>
+    </div>
+  `
+    )
+    .join("");
 }

@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("buy-now-link").href = product.link;
 
         document.getElementById("cart").addEventListener("click", () => {
-          addCart();
+          addToCart(product);
         });
       }
     })
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("buy-now-link").href = product.link;
 
         document.getElementById("cart").addEventListener("click", () => {
-          addCart(product);
+          addToCart(product);
         });
       }
     })
@@ -140,15 +140,14 @@ function changeImageNike(image) {
 }
 
 // Add Cart section
-function addCart(product) {
+function addToCart(product) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
-  let existingProduct = cart.find((item) => item.id === product.id);
-  if (existingProduct) {
-    existingProduct.quantity += 1;
-  } else {
-    product.quantity = 1;
-    cart.push(product);
+
+  if (product.id <= 8) {
+    product.images[0] = `../../${product.images[0]}`;
+  } else if (product.id <= 32) {
+    product.images[0] = `../Nike/${product.images[0]}`;
   }
-  localStorage.setItem("Cart", JSON.stringify(product));
-  console.log("Product added");
+  cart.push(product);
+  localStorage.setItem("cart", JSON.stringify(cart));
 }
