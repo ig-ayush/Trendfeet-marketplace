@@ -154,4 +154,20 @@ function addToCart(product) {
   }
   cart.push(product);
   localStorage.setItem("cart", JSON.stringify(cart));
+
+  
 }
+
+// add cart btn 
+const addCarttn = document.getElementById("cart");
+const cart_msg = document.getElementById("cart-msg");
+addCarttn.addEventListener("click",()=>{
+
+  setTimeout(() => {
+    cart_msg.classList.add("click");
+    setTimeout(() => {
+      cart_msg.classList.remove("click");
+    }, 2000);
+  },);
+})
+
