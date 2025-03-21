@@ -2,6 +2,68 @@ document.addEventListener("DOMContentLoaded", function () {
   const urlF = new URLSearchParams(window.location.search);
   const productID = urlF.get("id");
 
+  // Dark mode feature
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleSwitch = document.querySelector(".switch input");
+    const body = document.body;
+
+    function enableDarkMode() {
+      body.classList.add("dark-mode");
+      localStorage.setItem("theme", "dark");
+      toggleSwitch.checked = true;
+    }
+
+    function disableDarkMode() {
+      body.classList.remove("dark-mode");
+      localStorage.setItem("theme", "light");
+      toggleSwitch.checked = false;
+    }
+
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      enableDarkMode();
+    }
+
+    toggleSwitch.addEventListener("change", function () {
+      if (this.checked) {
+        enableDarkMode();
+      } else {
+        disableDarkMode();
+      }
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleSwitch = document.querySelector(".switch input");
+    const body = document.body;
+
+    function enableDarkMode() {
+      body.classList.add("dark-mode");
+      localStorage.setItem("theme", "dark");
+      toggleSwitch.checked = true;
+    }
+
+    function disableDarkMode() {
+      body.classList.remove("dark-mode");
+      localStorage.setItem("theme", "light");
+      toggleSwitch.checked = false;
+    }
+
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      enableDarkMode();
+    }
+
+    toggleSwitch.addEventListener("change", function () {
+      if (this.checked) {
+        enableDarkMode();
+      } else {
+        disableDarkMode();
+      }
+    });
+  });
+
+  // Home Page Products
   fetch("../../home-Page-Products.json")
     .then((response) => response.json())
     .then((products) => {
@@ -11,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let thumbnails = product.images
           .map(
             (img) => `
-            <img class="thumbnail" src="../../${img}" onclick="changeImage('${img}')" alt="product Images">
+            <img class="thumbnail" src="../../${img}" onclick="changeImageHome('${img}')" alt="product Images">
         `
           )
           .join("");
@@ -24,11 +86,20 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("disc").textContent = product.dis;
         document.getElementById("price").textContent = `MRP: ${product.price}`;
         document.getElementById("buy-now-link").href = product.link;
+
+        document.getElementById("cart").addEventListener("click", () => {
+          addToCart(product);
+        });
       }
     })
     .catch((error) => console.error("Error loading products", error));
 });
 
+function changeImageHome(image) {
+  document.getElementById("one-img").src = `../../${image}`;
+}
+
+// Nike Page Products
 document.addEventListener("DOMContentLoaded", function () {
   const urlF = new URLSearchParams(window.location.search);
   const productID = urlF.get("id");
@@ -42,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let thumbnails = product.images
           .map(
             (img) => `
-            <img class="thumbnail" src="../Nike/${img}" onclick="changeImage('${img}')" alt="product Images">
+            <img class="thumbnail" src="../Nike/${img}" onclick="changeImageNike('${img}')" alt="product Images">
         `
           )
           .join("");
@@ -55,72 +126,32 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("disc").textContent = product.dis;
         document.getElementById("price").textContent = `MRP: ${product.price}`;
         document.getElementById("buy-now-link").href = product.link;
+
+        document.getElementById("cart").addEventListener("click", () => {
+          addToCart(product);
+        });
       }
     })
     .catch((error) => console.error("Error loading products", error));
 });
 
-function changeImage(image) {
+function changeImageNike(image) {
   document.getElementById("one-img").src = `../Nike/${image}`;
 }
 
-// Dark mode feature
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleSwitch = document.querySelector(".switch input");
-  const body = document.body;
+// Add Cart section
+function addToCart(product) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  function enableDarkMode() {
-    body.classList.add("dark-mode");
-    localStorage.setItem("theme", "dark");
-    toggleSwitch.checked = true;
+  let exixtedProduct = cart.find(item => item.id == product.id);
+
+  if(exixtedProduct) return;
+  
+  if (product.id <= 8) {
+    product.images[0] = `../../${product.images[0]}`;
+  } else if (product.id <= 32) {
+    product.images[0] = `../Nike/${product.images[0]}`;
   }
-
-  function disableDarkMode() {
-    body.classList.remove("dark-mode");
-    localStorage.setItem("theme", "light");
-    toggleSwitch.checked = false;
-  }
-
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark") {
-    enableDarkMode();
-  }
-
-  toggleSwitch.addEventListener("change", function () {
-    if (this.checked) {
-      enableDarkMode();
-    } else {
-      disableDarkMode();
-    }
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleSwitch = document.querySelector(".switch input");
-  const body = document.body;
-
-  function enableDarkMode() {
-    body.classList.add("dark-mode");
-    localStorage.setItem("theme", "dark");
-    toggleSwitch.checked = true;
-  }
-
-  function disableDarkMode() {
-    body.classList.remove("dark-mode");
-    localStorage.setItem("theme", "light");
-    toggleSwitch.checked = false;
-  }
-
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark") {
-    enableDarkMode();
-  }
-
-  toggleSwitch.addEventListener("change", function () {
-    if (this.checked) {
-      enableDarkMode();
-    } else {
-      disableDarkMode();
-    }
-  });
-});
+  cart.push(product);
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
