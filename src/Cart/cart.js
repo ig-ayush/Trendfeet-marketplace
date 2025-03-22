@@ -44,7 +44,8 @@ function displayCart() {
   let container = document.querySelector(".container");
 
   if (cart.length === 0) {
-    container.innerHTML = "<p>Your cart is empty.</p>";
+    document.querySelector(".cart-msg").style.display = "flex";
+    container.innerHTML = "";
     return;
   }
 
@@ -91,4 +92,8 @@ function removeItem(index) {
 function clearAll() {
   localStorage.removeItem("cart");
   displayCart();
+}
+
+function get(){
+  window.location.href = "../../index.html";
 }
