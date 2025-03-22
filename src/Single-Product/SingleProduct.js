@@ -117,6 +117,44 @@ document.addEventListener("DOMContentLoaded", function () {
         `
           )
           .join("");
+          
+
+        document.getElementById("product-images").innerHTML = thumbnails;
+
+        document.getElementById("brand").textContent = product.brand;
+        document.getElementById("product-name").textContent =
+          product.product_name;
+        document.getElementById("disc").textContent = product.dis;
+        document.getElementById("price").textContent = `MRP: ${product.price}`;
+        document.getElementById("buy-now-link").href = product.link;
+
+        document.getElementById("cart").addEventListener("click", () => {
+          addToCart(product);
+        });
+      }
+    })
+    .catch((error) => console.error("Error loading products", error));
+});
+
+// Adidas Page 
+document.addEventListener("DOMContentLoaded", function () {
+  const urlF = new URLSearchParams(window.location.search);
+  const productID = urlF.get("id");
+
+  fetch("../adidas/adidas.json")
+    .then((response) => response.json())
+    .then((products) => {
+      let product = products.find((p) => p.id == productID);
+      if (product) {
+        document.getElementById("one-img").src = `../adidas/${product.images[0]}`;
+        let thumbnails = product.images
+          .map(
+            (img) => `
+            <img class="thumbnail" src="../adidas/${img}" onclick="changeImageNike('${img}')" alt="product Images">
+        `
+          )
+          .join("");
+          
 
         document.getElementById("product-images").innerHTML = thumbnails;
 
@@ -137,7 +175,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function changeImageNike(image) {
   document.getElementById("one-img").src = `../Nike/${image}`;
+  document.getElementById("one-img").src = `../adidas/${image}`;
 }
+
 
 // Add Cart section
 function addToCart(product) {

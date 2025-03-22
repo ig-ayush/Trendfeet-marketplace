@@ -1,0 +1,362 @@
+[
+    {
+        "id":33,
+        "brand": "Adidas",
+        "product_name":"Superstar II ",
+        "dis": "Men's Shoes",
+        "price": "₹9 999",
+        "images": [
+            "Images/adidas-1-1.png",
+            "Images/adidas-2-1.png",
+            "Images/adidas-3-1.png",
+            "Images/adidas-4-1.png",
+            "Images/adidas-5-1.png"
+        ],
+        "link":"https://www.adidas.co.in/superstar-ii-shoes/IH8659.html?forceSelSize=3.5"
+    },
+    {
+        "id":34,
+        "brand": "Adidas",
+        "product_name":"Mercedes - AMG Petronas",
+        "dis": "Men's Shoes",
+        "price": "₹11 999",
+        "images": [
+            "Images/adidas-p1-1.png",
+            "Images/adidas-p1-2.png",
+            "Images/adidas-p1-3.png",
+            "Images/adidas-p1-4.png",
+            "Images/adidas-p1-5.png"
+        ],
+        "link":"https://www.adidas.co.in/mercedes---amg-petronas-formula-one-team-acesmash-mid-shoes/JR1060.html"
+    },
+    {
+        "id":35,
+        "brand": "Adidas",
+        "product_name":"Galaxy 6 Shoes",
+        "dis": "Women • Running",
+        "price": "₹5 999",
+        "images": [
+            "Images/adidas-p2-1.png",
+            "Images/adidas-p2-2.png",
+            "Images/adidas-p2-3.png",
+            "Images/adidas-p2-4.png",
+            "Images/adidas-p2-5.png"
+        ],
+        "link":"https://www.adidas.co.in/galaxy-6-shoes/GW4131.html"
+    },
+    {
+        "id":36,
+        "brand": "Adidas",
+        "product_name":"Supernova Solution 2.0 Running Shoes",
+        "dis": "Men • Running",
+        "price": "₹ 14,999",
+        "images": [
+            "Images/adidas-p3-1.png",
+            "Images/adidas-p3-2.png",
+            "Images/adidas-p3-3.png",
+            "Images/adidas-p3-4.png",
+            "Images/adidas-p3-5.png"
+        ],
+        "link":"https://www.adidas.co.in/supernova-solution-2.0-running-shoes/IH8720.html"
+    },
+    {
+        "id":37,
+        "brand": "Adidas",
+        "product_name":"Adilette Lite Slides",
+        "dis": "Slides",
+        "price": "₹ 2,999",
+        "images": [
+            "Images/adidas-p4-1.png",
+            "Images/adidas-p4-2.png",
+            "Images/adidas-p4-3.png",
+            "Images/adidas-p4-4.png",
+            "Images/adidas-p4-5.png"
+        ],
+        "link":"https://www.adidas.co.in/adilette-lite-slides/FU8297.html"
+    },
+    {
+        "id":38,
+        "brand": "Adidas",
+        "product_name":"Courtflash Speed 2 Tennis Shoes",
+        "dis": "Men • Tennis",
+        "price": "₹ 7,999",
+        "images": [
+            "Images/adidas-p6-1.png",
+            "Images/adidas-p6-2.png",
+            "Images/adidas-p6-3.png",
+            "Images/adidas-p6-4.png",
+            "Images/adidas-p6-5.png"
+        ],
+        "link":"https://www.adidas.co.in/courtflash-speed-2-tennis-shoes/IH3614.html"
+    },
+    {
+        "id":39,
+        "brand": "Adidas",
+        "product_name":"CmfortZ 1.0 M",
+        "dis": "Men • Sportswear",
+        "price": "₹ 5,599",
+        "images": [
+            "Images/adidas-p5-1.png",
+            "Images/adidas-p5-2.png",
+            "Images/adidas-p5-3.png",
+            "Images/adidas-p5-4.png",
+            "Images/adidas-p5-5.png"
+        ],
+        "link":"https://www.adidas.co.in/cmfortz-1.0-m/JK2386.html"
+    },
+    {
+        "id":40,
+        "brand": "Adidas",
+        "product_name":"Adifom Stan Smith Mule Shoes",
+        "dis": "Women • Originals",
+        "price": "₹ 6,599",
+        "images": [
+            "Images/adidas-p7-1.png",
+            "Images/adidas-p7-2.png",
+            "Images/adidas-p7-3.png",
+            "Images/adidas-p7-4.png",
+            "Images/adidas-p7-5.png"
+        ],
+        "link":"https://www.adidas.co.in/adifom-stan-smith-mule-shoes/IE0478.html"
+    },
+    {
+        "id":41,
+        "brand": "Adidas",
+        "product_name":"Adilette Sandals",
+        "dis": "Kids Unisex • Sportswear",
+        "price": "₹ 2,799",
+        "images": [
+            "Images/adidas-p8-1.png",
+            "Images/adidas-p8-2.png",
+            "Images/adidas-p8-3.png",
+            "Images/adidas-p8-4.png",
+            "Images/adidas-p8-5.png"
+        ],
+        "link":"https://www.adidas.co.in/adilette-sandals/IH3632.html"
+    },
+    {
+        "id":42,
+        "brand": "Adidas",
+        "product_name":"Porel M",
+        "dis": "Men • TERREX",
+        "price": "₹ 2,159",
+        "images": [
+            "Images/adidas-p9-1.png",
+            "Images/adidas-p9-1.png",
+            "Images/adidas-p9-1.png",
+            "Images/adidas-p9-1.png",
+            "Images/adidas-p9-1.png"
+        ],
+        "link":"https://www.adidas.co.in/porel-m/IV4999.html"
+    },
+    {
+        "id":43,
+        "brand": "Adidas",
+        "product_name":"YOMPZEE M",
+        "dis": "Men • Sportswear",
+        "price": "₹ 1,379",
+        "images": [
+            "Images/adidas-p10-1.png",
+            "Images/adidas-p10-2.png",
+            "Images/adidas-p10-3.png",
+            "Images/adidas-p10-4.png",
+            "Images/adidas-p10-5.png"
+        ],
+        "link":"https://www.adidas.co.in/yompzee-m/JJ5298.html"
+    },
+    {
+        "id":44,
+        "brand": "Adidas",
+        "product_name":"Superstar Mule Shoes",
+        "dis": "Original",
+        "price": "₹ 6,999",
+        "images": [
+            "Images/adidas-p11-1.png",
+            "Images/adidas-p11-2.png",
+            "Images/adidas-p11-3.png",
+            "Images/adidas-p11-4.png",
+            "Images/adidas-p11-5.png"
+        ],
+        "link":"https://www.adidas.co.in/superstar-mule-shoes/IF6184.html"
+    },
+    {
+        "id":45,
+        "brand": "Adidas",
+        "product_name":"Base Switch W",
+        "dis": "Women • Running",
+        "price": "₹ 3,999",
+        "images": [
+            "Images/adidas-p12-1.png",
+            "Images/adidas-p12-2.png",
+            "Images/adidas-p12-3.png",
+            "Images/adidas-p12-4.png",
+            "Images/adidas-p12-5.png"
+        ],
+        "link":"https://www.adidas.co.in/base-switch-w/JK0972.html"
+    },
+    {
+        "id":46,
+        "brand": "Adidas",
+        "product_name":"Predator League Firm Ground Boots",
+        "dis": "Football shoes",
+        "price": "₹ 5,995",
+        "images": [
+            "Images/adidas-p13-1.png",
+            "Images/adidas-p13-2.png",
+            "Images/adidas-p13-3.png",
+            "Images/adidas-p13-4.png",
+            "Images/adidas-p13-5.png"
+        ],
+        "link":"https://www.adidas.co.in/predator-league-firm-ground-boots/IF6347.html"
+    },
+    {
+        "id":47,
+        "brand": "Adidas",
+        "product_name":"SL 72 RS Shoes",
+        "dis": "Originals",
+        "price": "₹ 9,999",
+        "images": [
+            "Images/adidas-p14-1.png",
+            "Images/adidas-p14-2.png",
+            "Images/adidas-p14-3.png",
+            "Images/adidas-p14-4.png",
+            "Images/adidas-p14-5.png"
+        ],
+        "link":"https://www.adidas.co.in/sl-72-rs-shoes/IG2132.html"
+    },
+    {
+        "id":48,
+        "brand": "Adidas",
+        "product_name":"Flair-Tonic",
+        "dis": "Men • Running",
+        "price": "₹ 4 999",
+        "images": [
+            "Images/adidas-p15-1.png",
+            "Images/adidas-p15-2.png",
+            "Images/adidas-p15-3.png",
+            "Images/adidas-p15-4.png",
+            "Images/adidas-p15-5.png"
+        ],
+        "link":"https://www.adidas.co.in/flair-tonic/JK3761.html"
+    },
+    {
+        "id":49,
+        "brand": "Adidas",
+        "product_name":"CushOn M",
+        "dis": "Men's Workout Shoes",
+        "price": "₹ 3,695",
+        "images": [
+            "Images/adidas-p16-1.png",
+            "Images/adidas-p16-2.png",
+            "Images/adidas-p16-3.png",
+            "Images/adidas-p16-4.png",
+            "Images/adidas-p16-5.png"
+        ],
+        "link":"https://www.adidas.co.in/cushon-m/JK2268.html"
+    },
+    {
+        "id":50,
+        "brand": "Adidas",
+        "product_name":"Cloudfoam Go Sock Shoes",
+        "dis": "Men • Sportswear",
+        "price": "₹ 6,999",
+        "images": [
+            "Images/adidas-p17-1.png",
+            "Images/adidas-p17-2.png",
+            "Images/adidas-p17-3.png",
+            "Images/adidas-p17-4.png",
+            "Images/adidas-p17-5.png"
+        ],
+        "link":"https://www.adidas.co.in/cloudfoam-go-sock-shoes/JH6804.html"
+    },
+    {
+        "id":51,
+        "brand": "Adidas",
+        "product_name":"SL 72 RS Shoes",
+        "dis": "Original",
+        "price": "₹ 9,999",
+        "images": [
+            "Images/adidas-p18-1.png",
+            "Images/adidas-p18-2.png",
+            "Images/adidas-p18-3.png",
+            "Images/adidas-p18-4.png",
+            "Images/adidas-p18-5.png"
+        ],
+        "link":"https://www.adidas.co.in/sl-72-rs-shoes/IH7912.html"
+    },
+    {
+        "id":52,
+        "brand": "Adidas",
+        "product_name":"Forum Mid Shoes",
+        "dis": "Men • Originals",
+        "price": "₹ 11,495",
+        "images": [
+            "Images/adidas-p19-1.png",
+            "Images/adidas-p19-2.png",
+            "Images/adidas-p19-3.png",
+            "Images/adidas-p19-4.png",
+            "Images/adidas-p19-5.png"
+        ],
+        "link":"https://www.adidas.co.in/forum-mid-shoes/IG3756.html"
+    },
+    {
+        "id":53,
+        "brand": "Adidas",
+        "product_name":"adidas Switch Fwd 2 Running Shoes",
+        "dis": "Women • Running",
+        "price": "₹ 9,579",
+        "images": [
+            "Images/adidas-p20-1.png",
+            "Images/adidas-p20-2.png",
+            "Images/adidas-p20-3.png",
+            "Images/adidas-p20-4.png",
+            "Images/adidas-p20-5.png"
+        ],
+        "link":"https://www.adidas.co.in/adidas-switch-fwd-2-running-shoes/IE5887.html"
+    },
+    {
+        "id":54,
+        "brand": "Adidas",
+        "product_name":"adidas by Stella McCartney Clogs",
+        "dis": "Women • adidas by Stella McCartney",
+        "price": "₹ 16,999",
+        "images": [
+            "Images/adidas-p21-1.png",
+            "Images/adidas-p21-2.png",
+            "Images/adidas-p21-3.png",
+            "Images/adidas-p21-4.png",
+            "Images/adidas-p21-5.png"
+        ],
+        "link":"https://www.adidas.co.in/adidas-by-stella-mccartney-clogs/GW2050.html"
+    },
+    {
+        "id":55,
+        "brand": "Adidas",
+        "product_name":"F50 League Firm/Multi-Ground Cleats Kids",
+        "dis": "Kids Unisex • Football",
+        "price": "₹ 3,995",
+        "images": [
+            "Images/adidas-p22-1.png",
+            "Images/adidas-p22-2.png",
+            "Images/adidas-p22-3.png",
+            "Images/adidas-p22-4.png",
+            "Images/adidas-p22-5.png"
+        ],
+        "link":"https://www.adidas.co.in/f50-league-firm-multi-ground-cleats-kids/IF1365.html"
+    },
+    {
+        "id":56,
+        "brand": "Adidas",
+        "product_name":"Alphaboost V2 Shoes",
+        "dis": "Men • Sportswear",
+        "price": "₹  ₹7,199",
+        "images": [
+            "Images/adidas-p23-1.png",
+            "Images/adidas-p23-2.png",
+            "Images/adidas-p23-3.png",
+            "Images/adidas-p23-4.png",
+            "Images/adidas-p23-5.png"
+        ],
+        "link":"https://www.adidas.co.in/alphaboost-v2-shoes/IE9162.html"
+    }
+]
