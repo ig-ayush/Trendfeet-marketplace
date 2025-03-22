@@ -183,6 +183,10 @@ function changeImageNike(image) {
 function addToCart(product) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+  let exixtedProduct = cart.find(item => item.id == product.id);
+
+  if(exixtedProduct) return;
+  
   if (product.id <= 8) {
     product.images[0] = `../../${product.images[0]}`;
   } else if (product.id <= 32) {
@@ -190,4 +194,20 @@ function addToCart(product) {
   }
   cart.push(product);
   localStorage.setItem("cart", JSON.stringify(cart));
+
+  
 }
+
+// add cart btn 
+const addCarttn = document.getElementById("cart");
+const cart_msg = document.getElementById("cart-msg");
+addCarttn.addEventListener("click",()=>{
+
+  setTimeout(() => {
+    cart_msg.classList.add("click");
+    setTimeout(() => {
+      cart_msg.classList.remove("click");
+    }, 2000);
+  },);
+})
+

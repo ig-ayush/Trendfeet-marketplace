@@ -44,7 +44,8 @@ function displayCart() {
   let container = document.querySelector(".container");
 
   if (cart.length === 0) {
-    container.innerHTML = "<p>Your cart is empty.</p>";
+    document.querySelector(".cart-msg").style.display = "flex";
+    container.innerHTML = "";
     return;
   }
 
@@ -68,12 +69,31 @@ function displayCart() {
           <p>(Also includes all applicable duties)</p>
         </section>
         <section class="buttons" id="buttons">
-            <button class="chekout">CHECKOUT</button>
-            <button class="view" >View</button>
+            <button class="chekout" onclick="view(${product.id})">VIEW</button>
+            <div id="remove" onclick="removeItem(${index})"><i class="fa-solid fa-trash"></i></div>
         </section>
       </div>
     </div>
   `
     )
     .join("");
+}
+
+function view(id) {
+  window.location.href = `../Single-Product/SinglePRoduct.html?id=${id}`;
+}
+function removeItem(index) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.splice(index, 1);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  displayCart();
+}
+
+function clearAll() {
+  localStorage.removeItem("cart");
+  displayCart();
+}
+
+function get(){
+  window.location.href = "../../index.html";
 }

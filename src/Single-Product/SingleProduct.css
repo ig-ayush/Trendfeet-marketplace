@@ -2,6 +2,7 @@
 
 .container {
   margin-top: 100px;
+  position: relative;
 }
 
 .single-product {
@@ -109,8 +110,33 @@
     color: #fff;
 }
 
+/* dark mode */
 body.dark-mode .main-image p{
   background-color: #000000;
   color: #fff;
   border: 1px solid white;
 }
+
+/* Cart message */
+
+.cart-msg{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  box-shadow: 10px 10px 40px rgba(75, 74, 74, 0.5);
+  margin-right: 15px;
+  width: 280px;
+  height: max-content;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  transition: .7s ease-in-out;
+  transform: translateX(380px);
+  /* visibility: hidden; */
+}
+
+.click{
+  visibility: visible;
+  transform: translateX(0);
+}
+
