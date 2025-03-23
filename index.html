@@ -1,239 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrendFeet</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TrendFeet</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="./src/product.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
 
-  <link rel="stylesheet" href="home.css" />
-  <link rel="stylesheet" href="./src/product.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
+  <body>
+    <!-- Navbar Section-->
+    <nav>
+      <div class="left-content">
+        <div class="logo">
+          <img src="Images/logo.png" alt="logo" />
+          <h3>TrendFeet</h3>
+        </div>
 
-<body>
-  <!-- Navbar Section-->
-  <nav>
-    <div class="left-content">
-      <div class="logo">
-        <img src="Images/logo.png" alt="logo" />
-        <h3>TrendFeet</h3>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="./src/Nike/nike.html">Nike</a></li>
+          <li><a href="./src/adidas/adidas.html">Adidas</a></li>
+          <li><a href="#">Puma</a></li>
+        </ul>
       </div>
+      <div class="right-content">
+        <ul>
+          <li>
+            <a href="./src/Cart/cart.html" title="cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" title="profile">
+              <i class="fa-solid fa-user"></i>
+            </a>
+          </li>
+          <li>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="./src/Nike/nike.html">Nike</a></li>
-        <li><a href="./src/adidas/adidas.html">Adidas</a></li>
-        <li><a href="#">Puma</a></li>
-      </ul>
-    </div>
-    <div class="right-content">
-      <ul>
-        <li>
-          <a href="./src/Cart/cart.html" title="cart">
-            <i class="fa-solid fa-cart-shopping"></i>
+    <!-- Hero session -->
+    <main>
+      <div
+        class="hero"
+        data-aos="zoom-out-left"
+        data-aos-duration="2000"
+        id="hero"
+      >
+        <div class="right-side-hero">
+          <h1 data-aos="fade-up" data-aos-duration="2000">TrendFeet</h1>
+          <h2 data-aos="fade-up" data-aos-duration="3000">
+            Step Into Style with TrendFeet!
+          </h2>
+          <p class="line1">
+            Discover the latest footwear from top brands like Nike, Adidas, and
+            Puma.
+          </p>
+          <p class="line2">Shop, Sell, and Stay in Style – All in One Place.</p>
+        </div>
+
+        <div class="left-side-hero">
+          <a href="#product-heading">
+            <button
+              id="shop-now"
+              data-aos="fade-down"
+              data-aos-offset="-200"
+              data-aos-duration="1000"
+            >
+              Shop Now
+            </button>
           </a>
-        </li>
-        <li>
-          <a href="#" title="profile">
-            <i class="fa-solid fa-user"></i>
-          </a>
-        </li>
-        <li>
-          <label class="switch">
-            <input type="checkbox" />
-            <span class="slider"></span>
-          </label>
-        </li>
-      </ul>
-    </div>
-  </nav>
+          <button
+            id="sell-footware"
+            data-aos="fade-down"
+            data-aos-offset="-200"
+            data-aos-duration="2000"
+          >
+            Sell Your Footware
+          </button>
+        </div>
+      </div>
+    </main>
 
-  <!-- Hero session -->
-  <main>
-    <div class="hero" data-aos="zoom-out-left" data-aos-duration="2000" id="hero">
-      <div class="right-side-hero">
-        <h1 data-aos="fade-up" data-aos-duration="2000">TrendFeet</h1>
-        <h2 data-aos="fade-up" data-aos-duration="3000">
-          Step Into Style with TrendFeet!
-        </h2>
-        <p class="line1">
-          Discover the latest footwear from top brands like Nike, Adidas, and
-          Puma.
-        </p>
-        <p class="line2">Shop, Sell, and Stay in Style – All in One Place.</p>
-      </div>
-
-      <div class="left-side-hero">
-        <button id="shop-now" data-aos="fade-down" data-aos-offset="-200" data-aos-duration="1000">
-          Shop Now
-        </button>
-        <button id="sell-footware" data-aos="fade-down" data-aos-offset="-200" data-aos-duration="2000">
-          Sell Your Footware
-        </button>
-      </div>
-    </div>
-  </main>
-
-  <br />
-
-  <!-- Brand section -->
-  <main>
-    <div class="brands" data-aos="fade-up" data-aos-duration="2000">
-      <div class="nike">
-        <p class="brand-content">
-          Go for Nike for its inspiring heritage and relentless innovation
-          since 1971. Its qualities—advanced tech, lasting durability, and
-          iconic, stylish design—promise top performance and confidence.
-        </p>
-      </div>
-
-      <div class="adidas">
-        <p class="brand-content">
-          Pick Adidas for its innovative legacy and bold style. Its
-          qualities—top tech, durability, and sleek design—guarantee
-          performance and flair.
-        </p>
-      </div>
-
-      <div class="puma">
-        <p class="brand-content">
-          Pick Puma for its bold legacy and dynamic spirit since 1948. Its
-          qualities—innovative tech, durable build, and sleek, edgy
-          style—ensure top performance and vibe.
-        </p>
-      </div>
-    </div>
-  </main>
-
-  <br />
-  <!-- Service section -->
-  <main>
-    <div class="services" data-aos="fade-down" data-aos-duration="2000">
-      <div class="service s-1">
-        <div class="img img-1"></div>
-        <p>Free Shipping</p>
-      </div>
-      <div class="service s-2">
-        <div class="img img-2"></div>
-        <p>Online orders</p>
-      </div>
-      <div class="service s-3">
-        <div class="img img-3"></div>
-        <p>Happy sells</p>
-      </div>
-      <div class="service s-4">
-        <div class="img img-4"></div>
-        <p>Promotions</p>
-      </div>
-      <div class="service s-5">
-        <div class="img img-5"></div>
-        <p>Save money</p>
-      </div>
-    </div>
-  </main>
-  <br />
-
-  <!-- Products section -->
-  <main>
-    <h1 id="product-heading">New Arrivals</h1>
     <br />
-    <div class="new-arrivals-producs">
-      <div class="products" data-aos="fade-up" data-aos-duration="2000"></div>
-    </div>
+
+    <!-- Brand section -->
+    <main>
+      <div class="brands" data-aos="fade-up" data-aos-duration="2000">
+        <div class="nike">
+          <p class="brand-content">
+            Go for Nike for its inspiring heritage and relentless innovation
+            since 1971. Its qualities—advanced tech, lasting durability, and
+            iconic, stylish design—promise top performance and confidence.
+          </p>
+        </div>
+
+        <div class="adidas">
+          <p class="brand-content">
+            Pick Adidas for its innovative legacy and bold style. Its
+            qualities—top tech, durability, and sleek design—guarantee
+            performance and flair.
+          </p>
+        </div>
+
+        <div class="puma">
+          <p class="brand-content">
+            Pick Puma for its bold legacy and dynamic spirit since 1948. Its
+            qualities—innovative tech, durable build, and sleek, edgy
+            style—ensure top performance and vibe.
+          </p>
+        </div>
+      </div>
+    </main>
+
     <br />
-  </main>
-
-  <!-- Footer -->
-  <main>
-    <footer>
-      <div class="footer-con">
-        <div class="category" id="category">
-          <ul>
-            <h3>SHOP BY CATEGORY</h3>
-            <li>Sports Shoes</li>
-            <li>Casual Sneakers</li>
-            <li>Formal Shoes</li>
-            <li>Outdoor & Hiking Shoes</li>
-            <li>Basketball & High-Tops</li>
-            <li>Football & Turf Shoes</li>
-          </ul>
+    <!-- Service section -->
+    <main>
+      <div class="services" data-aos="fade-down" data-aos-duration="2000">
+        <div class="service s-1">
+          <div class="img img-1"></div>
+          <p>Free Shipping</p>
         </div>
-
-        <div class="support" id="support">
-          <ul>
-            <h3>SUPPORT</h3>
-            <li>Contact us</li>
-            <li>Promotions & Sale</li>
-            <li>Track Order</li>
-            <li>Shoe Care</li>
-            <li>Initiate Return / Exchange</li>
-            <li>Sneakers</li>
-            <li>Cookie Setting</li>
-          </ul>
+        <div class="service s-2">
+          <div class="img img-2"></div>
+          <p>Online orders</p>
         </div>
-
-        <div class="about" id="about">
-          <ul>
-            <h3>ABOUT</h3>
-            <li>Company</li>
-            <li><a href="https://about.nike.com/en/">About nike</a></li>
-            <li><a href="https://about.nike.com/en/newsroom">News</a></li>
-            <li>
-              <a href="https://www.adidas.co.in/blog">adidas stories</a>
-            </li>
-            <li>
-              <a href="https://www.adidas.co.in/mobileapps">adidas app</a>
-            </li>
-            <li>
-              <a href="https://about.puma.com/en/this-is-puma">PUMA Company</a>
-            </li>
-            <li>
-              <a href="https://in.puma.com/in/en/articles">PUMA Article</a>
-            </li>
-          </ul>
+        <div class="service s-3">
+          <div class="img img-3"></div>
+          <p>Happy sells</p>
         </div>
-        <!-- Brand section -->
-        <div class="brand" id="brand">
-          <div class="footer-logo">
-            <img src="Images/logo.png" alt="TrendFeet" />
-            <h1>TrendFeet</h1>
+        <div class="service s-4">
+          <div class="img img-4"></div>
+          <p>Promotions</p>
+        </div>
+        <div class="service s-5">
+          <div class="img img-5"></div>
+          <p>Save money</p>
+        </div>
+      </div>
+    </main>
+    <br />
+
+    <!-- Products section -->
+    <main>
+      <h1 id="product-heading">New Arrivals</h1>
+      <br />
+      <div class="new-arrivals-producs">
+        <div class="products" data-aos="fade-up" data-aos-duration="2000"></div>
+      </div>
+      <br />
+    </main>
+
+    <!-- Footer -->
+    <main>
+      <footer>
+        <div class="footer-con">
+          <div class="category" id="category">
+            <ul>
+              <h3>SHOP BY CATEGORY</h3>
+              <li>Sports Shoes</li>
+              <li>Casual Sneakers</li>
+              <li>Formal Shoes</li>
+              <li>Outdoor & Hiking Shoes</li>
+              <li>Basketball & High-Tops</li>
+              <li>Football & Turf Shoes</li>
+            </ul>
           </div>
-          <br />
-          <h3>EXPLORE</h3>
-          <div class="explore">
-            <div class="explore-nike">
-              <a href="https://www.nike.com/in/">
-                <img src="Images/nike-logo.jpg" alt="nike" />
-              </a>
+
+          <div class="support" id="support">
+            <ul>
+              <h3>SUPPORT</h3>
+              <li>Contact us</li>
+              <li>Promotions & Sale</li>
+              <li>Track Order</li>
+              <li>Shoe Care</li>
+              <li>Initiate Return / Exchange</li>
+              <li>Sneakers</li>
+              <li>Cookie Setting</li>
+            </ul>
+          </div>
+
+          <div class="about" id="about">
+            <ul>
+              <h3>ABOUT</h3>
+              <li>Company</li>
+              <li><a href="https://about.nike.com/en/">About nike</a></li>
+              <li><a href="https://about.nike.com/en/newsroom">News</a></li>
+              <li>
+                <a href="https://www.adidas.co.in/blog">adidas stories</a>
+              </li>
+              <li>
+                <a href="https://www.adidas.co.in/mobileapps">adidas app</a>
+              </li>
+              <li>
+                <a href="https://about.puma.com/en/this-is-puma"
+                  >PUMA Company</a
+                >
+              </li>
+              <li>
+                <a href="https://in.puma.com/in/en/articles">PUMA Article</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Brand section -->
+          <div class="brand" id="brand">
+            <div class="footer-logo">
+              <img src="Images/logo.png" alt="TrendFeet" />
+              <h1>TrendFeet</h1>
             </div>
-            <div class="explore-adidas">
-              <a href="https://www.adidas.co.in/">
-                <img src="Images/adidas-logo.png" alt="adidas" />
-              </a>
-            </div>
-            <div class="explore-puma">
-              <a href="https://in.puma.com/in/en">
-                <img src="Images/puma-logo.jpg" alt="PUMA" />
-              </a>
+            <br />
+            <h3>EXPLORE</h3>
+            <div class="explore">
+              <div class="explore-nike">
+                <a href="https://www.nike.com/in/">
+                  <img src="Images/nike-logo.jpg" alt="nike" />
+                </a>
+              </div>
+              <div class="explore-adidas">
+                <a href="https://www.adidas.co.in/">
+                  <img src="Images/adidas-logo.png" alt="adidas" />
+                </a>
+              </div>
+              <div class="explore-puma">
+                <a href="https://in.puma.com/in/en">
+                  <img src="Images/puma-logo.jpg" alt="PUMA" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <hr>
-      <p>&copy; 2025 TrendFeet. All Rights Reserved.</p>
-    </footer>
-  </main>
-
-</body>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<script src="home.js"></script>
-
+        <hr />
+        <p>&copy; 2025 TrendFeet. All Rights Reserved.</p>
+      </footer>
+    </main>
+  </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="home.js"></script>
 </html>
