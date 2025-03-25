@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
         `
           )
           .join("");
-          
+
 
         document.getElementById("product-images").innerHTML = thumbnails;
 
@@ -154,13 +154,12 @@ document.addEventListener("DOMContentLoaded", function () {
         `
           )
           .join("");
-          
+
 
         document.getElementById("product-images").innerHTML = thumbnails;
 
         document.getElementById("brand").textContent = product.brand;
-        document.getElementById("product-name").textContent =
-          product.product_name;
+        document.getElementById("product-name").textContent =product.product_name;
         document.getElementById("disc").textContent = product.dis;
         document.getElementById("price").textContent = `MRP: ${product.price}`;
         document.getElementById("buy-now-link").href = product.link;
@@ -172,11 +171,53 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch((error) => console.error("Error loading products", error));
 });
+//Puma page's
+document.addEventListener("DOMContentLoaded", function () {
+  const urlF = new URLSearchParams(window.location.search);
+  const productID = urlF.get("id");
 
+  fetch("../Puma/puma.json")
+    .then((response) => response.json())
+    .then((products) => {
+      let product = products.find((p) => p.id == productID);
+      if (product) {
+        document.getElementById("one-img").src = `../Puma/${product.images[0]}`;
+        let thumbnails = product.images
+          .map(
+            (img) => `
+            <img class="thumbnail" src="../Puma/${img}" onclick="changeImageNike('${img}')" alt="product Images">
+        `
+          )
+          .join("");
+
+
+        document.getElementById("product-images").innerHTML = thumbnails;
+
+        document.getElementById("brand").textContent = product.brand;
+        document.getElementById("product-name").textContent =product.product_name;
+        document.getElementById("disc").textContent = product.dis;
+        document.getElementById("price").textContent = `MRP: ${product.price}`;
+        document.getElementById("buy-now-link").href = product.link;
+
+        document.getElementById("cart").addEventListener("click", () => {
+          addToCart(product);
+        });
+      }
+    })
+    .catch((error) => console.error("Error loading products", error));
+});
 function changeImageNike(image) {
-  document.getElementById("one-img").src = `../Nike/${image}`;
-  document.getElementById("one-img").src = `../adidas/${image}`;
+  const brand = document.getElementById("brand").textContent.toLowerCase(); // Get the brand name
+  
+  if (brand === "nike") {
+    document.getElementById("one-img").src = `../Nike/${image}`;
+  } else if (brand === "adidas") {
+    document.getElementById("one-img").src = `../adidas/${image}`;
+  } else if (brand === "puma") {
+    document.getElementById("one-img").src = `../Puma/${image}`;
+  }
 }
+
 
 
 // Add Cart section
@@ -185,23 +226,27 @@ function addToCart(product) {
 
   let exixtedProduct = cart.find(item => item.id == product.id);
 
-  if(exixtedProduct) return;
-  
+  if (exixtedProduct) return;
+
   if (product.id <= 8) {
     product.images[0] = `../../${product.images[0]}`;
   } else if (product.id <= 32) {
     product.images[0] = `../Nike/${product.images[0]}`;
+  } else if (product.id <= 56) {
+    product.images[0] = `../adidas/${product.images[0]}`;
+  } else if(product.id <= 80){
+    product.images[0]=`../Puma/${product.images[0]}`;
   }
   cart.push(product);
   localStorage.setItem("cart", JSON.stringify(cart));
 
-  
+
 }
 
 // add cart btn 
 const addCarttn = document.getElementById("cart");
 const cart_msg = document.getElementById("cart-msg");
-addCarttn.addEventListener("click",()=>{
+addCarttn.addEventListener("click", () => {
 
   setTimeout(() => {
     cart_msg.classList.add("click");

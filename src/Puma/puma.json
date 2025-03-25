@@ -1,0 +1,362 @@
+[
+    {
+        "id":57,
+        "brand": "Puma",
+        "product_name":"Ca Pro Mid Sneakers",
+        "dis": "Men's Shoes",
+        "price": "₹4,999",
+        "images": [
+            "Images/p1-1.png",
+            "Images/p1-2.png",
+            "Images/p1-3.png",
+            "Images/p1-4.png",
+            "Images/p1-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/ca-pro-mid-sneakers/386759?search=true&swatch=04"
+    },
+    {
+        "id":58,
+        "brand": "Puma",
+        "product_name":"Galaxis Pro Men's Shoes",
+        "dis": "Men's Shoes",
+        "price": "₹3,499",
+        "images": [
+            "Images/p2-1.png",
+            "Images/p2-2.png",
+            "Images/p2-3.png",
+            "Images/p2-4.png",
+            "Images/p2-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/galaxis-pro-mens-performance-boost-running-shoes/311767?search=true&swatch=02"
+    },
+    {
+        "id":59,
+        "brand": "Puma",
+        "product_name":"RS-X Heritage Sneakers",
+        "dis": "Men's Shoes",
+        "price": "₹7,699",
+        "images": [
+            "Images/p3-1.png",
+            "Images/p3-2.png",
+            "Images/p3-3.png",
+            "Images/p3-4.png",
+            "Images/p3-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/rs-x-heritage-sneakers/398210?search=true&swatch=06"
+    },
+    {
+        "id":60,
+        "brand": "Puma",
+        "product_name":"BMW Motorsport Drift Cat",
+        "dis": "Men's Shoes",
+        "price": "₹4,339",
+        "images": [
+            "Images/p4-1.png",
+            "Images/p4-2.png",
+            "Images/p4-3.png",
+            "Images/p4-4.png",
+            "Images/p4-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/bmw-motorsport-drift-cat-5-ultra-shoes/305882?search=true&swatch=03"
+    },
+    {
+        "id":61,
+        "brand": "Puma",
+        "product_name":"FlexFocus Lite",
+        "dis": "Running Shoes",
+        "price": "₹4,199",
+        "images": [
+            "Images/p5-1.png",
+            "Images/p5-2.png",
+            "Images/p5-3.png",
+            "Images/p5-4.png",
+            "Images/p5-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/flexfocus-lite-better-running-shoes/312094?search=true&swatch=01"
+    },
+    {
+        "id":62,
+        "brand": "Puma",
+        "product_name":"Softride Mayve Res ",
+        "dis": "Women's Running Shoes",
+        "price": "₹5,499",
+        "images": [
+            "Images/p6-1.png",
+            "Images/p6-2.png",
+            "Images/p6-3.png",
+            "Images/p6-4.png",
+            "Images/p6-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/softride-mayve-res-womens-running-shoes/312111?swatch=02"
+    },
+    {
+        "id":63,
+        "brand": "Puma",
+        "product_name":"Royalcat Comfort SOFTRIDE",
+        "dis": "Women's Slides",
+        "price": "₹2,799",
+        "images": [
+            "Images/P7-1.png",
+            "Images/P7-2.png",
+            "Images/P7-3.png",
+            "Images/P7-4.png",
+            "Images/P7-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/royalcat-comfort-softride-womens-slides/396711?swatch=01"
+    },
+    {
+        "id":64,
+        "brand": "Puma",
+        "product_name":"Softride Premier Res",
+        "dis": "Youth Slip-On Running Shoes",
+        "price": "₹4,999",
+        "images": [
+            "Images/P8-1.png",
+            "Images/P8-2.png",
+            "Images/P8-3.png",
+            "Images/P8-4.png",
+            "Images/P8-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/softride-premier-res-youth-slip-on-running-shoes/311893?swatch=01"
+    },
+    {
+        "id":65,
+        "brand": "Puma",
+        "product_name":"BMW M Motorsport Neo Cat ",
+        "dis": "Men's Shoes",
+        "price": "₹3,839",
+        "images": [
+            "Images/p9-1.png",
+            "Images/p9-2.png",
+            "Images/p9-3.png",
+            "Images/p9-4.png",
+            "Images/p9-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/bmw-m-motorsport-neo-cat-mid-2-0-sneakers/308370?swatch=02"
+    },
+    {
+        "id":66,
+        "brand": "Puma",
+        "product_name":"ATTACANTO FG/AG Youth",
+        "dis": "Football Boots",
+        "price": "₹ 12,295",
+        "images": [
+            "Images/P10-1.png",
+            "Images/P10-2.png",
+            "Images/P10-3.png",
+            "Images/P10-4.png",
+            "Images/P10-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/attacanto-fg-ag-youth-football-boots/107480?swatch=10"
+    },
+    {
+        "id":67,
+        "brand": "Puma",
+        "product_name":"Court Shatter",
+        "dis": "Men's Sportstyle Casual Shoe",
+        "price": "₹4,549",
+        "images": [
+            "Images/P11-1.png",
+            "Images/P11-2.png",
+            "Images/P11-3.png",
+            "Images/P11-4.png",
+            "Images/P11-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/court-shatter-mens-sportstyle-casual-shoe/402185?swatch=02"
+    },
+    {
+        "id":68,
+        "brand": "Puma",
+        "product_name":"Questblitz ",
+        "dis": "Men's Running Shoes",
+        "price": "₹4,799",
+        "images": [
+            "Images/P12-1.png",
+            "Images/P12-2.png",
+            "Images/P12-3.png",
+            "Images/P12-4.png",
+            "Images/P12-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/questblitz-mens-running-shoes/311108?swatch=02"
+    },
+    {
+        "id":69,
+        "brand": "Puma",
+        "product_name":"Nomic Men's Sneakers",
+        "dis": "Men's Sneakers",
+        "price": "₹3,799",
+        "images": [
+            "Images/P13-1.png",
+            "Images/P13-2.png",
+            "Images/P13-3.png",
+            "Images/P13-4.png",
+            "Images/P13-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/nomic-mens-sneakers/395828?swatch=03"
+    },
+    {
+        "id":70,
+        "brand": "Puma",
+        "product_name":"Softride Premier",
+        "dis": "Men's Slip-On Shoes",
+        "price": "₹4,089",
+        "images": [
+            "Images/P14-1.png",
+            "Images/P14-2.png",
+            "Images/P14-3.png",
+            "Images/P14-4.png",
+            "Images/P14-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/softride-premier-res-mens-slip-on-shoes/311887?swatch=02"
+    },
+    {
+        "id":71,
+        "brand": "Puma",
+        "product_name":"Softride Men's Slides",
+        "dis": "Slides",
+        "price": "₹3,499",
+        "images": [
+            "Images/P15-1.png",
+            "Images/P15-2.png",
+            "Images/P15-3.png",
+            "Images/P15-4.png",
+            "Images/P15-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/softride-mens-slides/399846?swatch=01"
+    },
+    {
+        "id":72,
+        "brand": "Puma",
+        "product_name":"ForeverRun NITRO™ ",
+        "dis": "Men's Running Shoes",
+        "price": "₹11,999",
+        "images": [
+            "Images/P16-1.png",
+            "Images/P16-2.png",
+            "Images/P16-3.png",
+            "Images/P16-4.png",
+            "Images/P16-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/foreverrun-nitro-mens-running-shoes/310479?swatch=01"
+    },
+    {
+        "id":73,
+        "brand": "Puma",
+        "product_name":"Softride Pro 24 Res ",
+        "dis": " Men's Slides",
+        "price": "₹3,499",
+        "images": [
+            "Images/P17-1.png",
+            "Images/P17-2.png",
+            "Images/P17-3.png",
+            "Images/P17-4.png",
+            "Images/P17-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/softride-pro-24-res-mens-slides/401120?swatch=01"
+    },
+    {
+        "id":74,
+        "brand": "Puma",
+        "product_name":"Suede Classic XXI Sneakers",
+        "dis": "Men's Shoes",
+        "price": "₹5,459",
+        "images": [
+            "Images/P18-1.png",
+            "Images/P18-2.png",
+            "Images/P18-3.png",
+            "Images/P18-4.png",
+            "Images/P18-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/suede-classic-xxi-sneakers/374915?swatch=05"
+    },
+    {
+        "id":75,
+        "brand": "Puma",
+        "product_name":"Cricket Strike Men's Shoes",
+        "dis": "Men's Shoes",
+        "price": "₹3,059",
+        "images": [
+            "Images/P19-1.png",
+            "Images/P19-2.png",
+            "Images/P19-3.png",
+            "Images/P19-4.png",
+            "Images/P19-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/cricket-strike-mens-shoes/108483?swatch=02"
+    },
+    {
+        "id":76,
+        "brand": "Puma",
+        "product_name":"Court Classic Res ",
+        "dis": "Men's Sneakers",
+        "price": "₹2,999",
+        "images": [
+            "Images/P21-1.png",
+            "Images/P21-2.png",
+            "Images/P21-3.png",
+            "Images/P21-4.png",
+            "Images/P21-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/court-classic-res-mens-sneakers/401117?swatch=03"
+    },
+    {
+        "id":77,
+        "brand": "Puma",
+        "product_name":"Softride Enzo Evo Res",
+        "dis": "Running Shoes",
+        "price": "₹ 6,999",
+        "images": [
+            "Images/P22-1.png",
+            "Images/P22-2.png",
+            "Images/P22-3.png",
+            "Images/P22-4.png",
+            "Images/P22-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/softride-enzo-evo-res-running-shoes/312074?swatch=03"
+    },
+    {
+        "id":78,
+        "brand": "Puma",
+        "product_name":"Seriah Men's Running Shoes",
+        "dis": "Men's Running Shoes",
+        "price": "₹4,499",
+        "images": [
+            "Images/P20-1.png",
+            "Images/P20-2.png",
+            "Images/P20-3.png",
+            "Images/P20-4.png",
+            "Images/P20-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/court-classic-res-mens-sneakers/401117?swatch=03"
+    },
+    {
+        "id":79,
+        "brand": "Puma",
+        "product_name":"Softride Premier Slip",
+        "dis": "Running Shoes",
+        "price": "₹7,500",
+        "images": [
+            "Images/P23-1.png",
+            "Images/P23-2.png",
+            "Images/P23-3.png",
+            "Images/P23-4.png",
+            "Images/P23-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/softride-premier-slip-on-mens-running-shoes/311891?swatch=01"
+    },
+    {
+        "id":80,
+        "brand": "Puma",
+        "product_name":"RS-X Efekt Sneakers",
+        "dis": "Running Shoes",
+        "price": "₹8,399",
+        "images": [
+            "Images/P24-1.png",
+            "Images/P24-2.png",
+            "Images/P24-3.png",
+            "Images/P24-4.png",
+            "Images/P24-5.png"
+        ],
+        "link":"https://in.puma.com/in/en/pd/rs-x-efekt-sneakers/390755?swatch=01"
+    }
+]
