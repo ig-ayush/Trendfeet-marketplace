@@ -32,6 +32,20 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const cart_msg = document.getElementById("cart-msg");
+
+  let message = localStorage.getItem("signInMsg");
+
+  if(message){
+    cart_msg.style.transform = "translateX(0px)";
+    localStorage.removeItem("signInMsg");
+
+    setTimeout(() => {
+        cart_msg.style.transform = "translateX(380px)";
+    }, 3000);
+  }
+});
 //   DataBase -> Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyAGgWQ0JFmzv4xnN3_Vt5FPpMgJ62ivGPM",
@@ -46,5 +60,3 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const database = firebase.database();
 console.log(firebase);
-
-

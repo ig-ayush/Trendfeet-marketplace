@@ -103,10 +103,25 @@ button:active {
   transform: translateY(0);
 }
 
-.auth p{
-    margin-left: 50px;
+.auth p {
+  margin-left: 50px;
 }
-.auth a{
-    text-decoration: underline;
-    font-weight: bolder;
+.auth a {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+.cart-msg {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  padding: 15px;
+  box-shadow: 10px 10px 40px rgba(75, 74, 74, 0.5);
+  margin-right: 15px;
+  width: 320px;
+  height: max-content;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  transition: 0.7s ease-in-out;
+  transform: translateX(380px);
 }

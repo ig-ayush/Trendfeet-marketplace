@@ -64,7 +64,9 @@ function signUp() {
       database.ref("users/" + user.uid).set({ email: user.email });
       console.log("User signed up:", user.email);
     })
+    .then(() => {
+      localStorage.setItem("signInMsg", " Welcome! Log in to continue. ✅ ");
+      window.location.href = "login.html";
+    })
     .catch((error) => console.error("Signup error:", error.message));
-
-    window.location.href = "login.html";
 }
