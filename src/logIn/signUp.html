@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TrandFeet &#8226; LOGIN</title>
+    <title>TrandFeet &#8226; SIGNUP</title>
 
     <link
       rel="stylesheet"
@@ -14,7 +14,7 @@
     />
 
     <link rel="stylesheet" href="../../home.css" />
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="signUp.css" />
   </head>
   <body>
     <!-- NavBar -->
@@ -58,31 +58,53 @@
     <main>
       <div class="container-fluid">
         <div class="auth" id="auth">
-          <h1 style="margin-bottom: 10px">Join Us Today!</h1>
+          <h2 style="margin-bottom: 10px">Welcome! Let's Get You Signed Up</h2>
           <!-- Input feilds -->
+        <div class="input-con">
 
-          <div class="input-container">
-            <input
-              placeholder="Enter your email"
-              class="input-field"
-              type="email"
-            />
-            <label for="input-field" class="input-label">Enter email</label>
-            <span class="input-highlight"></span>
-          </div>
-          <div class="input-container">
-            <input
-              placeholder="Enter your password"
-              class="input-field"
-              type="password"
-            />
-            <label for="input-field" class="input-label">Enter password</label>
-            <span class="input-highlight"></span>
-          </div>
+            <div class="input-container">
+                <input
+                placeholder="Full Name"
+                class="input-field"
+                type="text"
+                />
+                <label for="input-field" class="input-label">Full Name</label>
+                <span class="input-highlight"></span>
+            </div>
+            <div class="input-container">
+                <input
+                id="email"
+                placeholder="Enter your email"
+                class="input-field"
+                type="email"
+                />
+                <label for="input-field" class="input-label">Enter email</label>
+                <span class="input-highlight"></span>
+            </div>
+            <div class="input-container">
+                <input
+                id="password"
+                placeholder="Enter  password"
+                class="input-field"
+                type="password"
+                />
+                <label for="input-field" class="input-label">Enter password</label>
+                <span class="input-highlight"></span>
+            </div>
+            <div class="input-container">
+                <input
+                placeholder="Confirm password"
+                class="input-field"
+                type="password"
+                />
+                <label for="input-field" class="input-label">Confirm  password</label>
+                <span class="input-highlight"></span>
+            </div>
+        </div>
 
-          <button>LogIn</button>
+          <button id="signUpBtn">SignUp</button>
           <p title="Sign Up">
-            Not a member yet? <span><a href="signUp.html" id="signUp">Sign up</a></span> now!
+            Already have an account? <span><a href="login.html" id="signUp">Login here</a></span>! 
           </p>
         </div>
       </div>
@@ -92,7 +114,7 @@
   <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
-  <script src="login.js"></script>
+  <script src="signup.js"></script>
 
 
   </script>

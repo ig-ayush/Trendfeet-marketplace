@@ -33,9 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //   DataBase -> Firebase
+
 const firebaseConfig = {
   apiKey: "AIzaSyAGgWQ0JFmzv4xnN3_Vt5FPpMgJ62ivGPM",
   authDomain: "trendfeet-1d83e.firebaseapp.com",
+  databaseURL: "https://trendfeet-1d83e-default-rtdb.firebaseio.com",
   projectId: "trendfeet-1d83e",
   storageBucket: "trendfeet-1d83e.firebasestorage.app",
   messagingSenderId: "45676543220",
@@ -47,4 +49,22 @@ const auth = firebase.auth();
 const database = firebase.database();
 console.log(firebase);
 
+// SignUP
+const signUpBtn = document.getElementById("signUpBtn");
+signUpBtn.addEventListener("click", () => signUp());
 
+function signUp() {
+  let email = document.getElementById("email").value;
+  let password = document.getElementById("password").value;
+
+  auth
+    .createUserWithEmailAndPassword(email, password)
+    .then((userAuth) => {
+      const user = userAuth.user;
+      database.ref("users/" + user.uid).set({ email: user.email });
+      console.log("User signed up:", user.email);
+    })
+    .catch((error) => console.error("Signup error:", error.message));
+
+    window.location.href = "login.html";
+}
