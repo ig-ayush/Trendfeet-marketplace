@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrandFeet &#8226; PROFILE</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../../../home.css" />
+    <link rel="stylesheet" href="../../product.css" />
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <nav>
+      <div class="left-content">
+        <div class="logo">
+          <img src="../../../Images/logo.png" alt="logo" />
+          <h3>TrendFeet</h3>
+        </div>
+
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="../../Nike/nike.html">Nike</a></li>
+          <li><a href="../../adidas/adidas.html">Adidas</a></li>
+          <li><a href="../../Puma/puma.html">Puma</a></li>
+        </ul>
+      </div>
+      <div class="right-content">
+        <ul>
+          <li>
+            <a href="../../Cart/cart.html" title="cart" id="cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+          <li>
+            <a href="././src/Auth/login.html" title="profile" id="profile">
+              <i class="fa-solid fa-user"></i>
+            </a>
+          </li>
+          <li>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Profile -->
+    <main>
+      <div
+        class="profile"
+        id="profile"
+        data-aos="zoom-out"
+        data-aos-duration="2500"
+      >
+        <div class="pro-pic" id="pro-pic"></div>
+        <div class="info" id="info">
+          <h1>Ayush Acaharya</h1>
+          <h3>haha@gmail.com</h3>
+        </div>
+      </div>
+    </main>
+
+    <h2>Favourites</h2>
+    <div class="Favourites">
+      <div
+        class="products-profile"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      ></div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="profile.js"></script>
+</html>

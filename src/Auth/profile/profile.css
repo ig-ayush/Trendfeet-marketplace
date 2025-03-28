@@ -1,0 +1,47 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    margin-top: 50px;
+    padding: 80px;
+}
+
+.profile{
+    width: 100%;
+    height: max-content;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile h3{
+    color: #495057;
+}
+.pro-pic{
+    width: 100px;
+    height: 100px;
+    background-image: url(images/image-3.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.Favourites{
+    padding: 40px;
+}
+.profile .info h1,h2{
+    font-weight: 500;
+}
+.profile .info h3{color: #495057;}
+
+.products-profile{
+    overflow-x: scroll;
+    display: flex;
+    gap: 20px;
+}
+
+h2{padding: 10px;margin-left: 50px;}
