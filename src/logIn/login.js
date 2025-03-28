@@ -37,12 +37,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let message = localStorage.getItem("signInMsg");
 
-  if(message){
+  if (message) {
     cart_msg.style.transform = "translateX(0px)";
     localStorage.removeItem("signInMsg");
 
     setTimeout(() => {
-        cart_msg.style.transform = "translateX(380px)";
+      cart_msg.style.transform = "translateX(380px)";
     }, 3000);
   }
 });
@@ -60,3 +60,35 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const database = firebase.database();
 console.log(firebase);
+
+const logIn = document.getElementById("logIn");
+
+logIn.addEventListener("click", function () {
+  LogIn();
+});
+
+function LogIn() {
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  auth
+    .signInWithEmailAndPassword(email, password)
+    .then((userCredential) => {
+      console.log("User signed in:", userCredential.user.email);
+      window.location.href = "../../index.html";
+    })
+    .catch(() => {
+      localStorage.setItem("logInMsg", "❌Invalid email or password.");
+    });
+
+  let message = localStorage.getItem("logInMsg");
+
+  if (message) {
+    document.getElementById("cart-msg").style.transform = "translateX(0px)";
+    document.getElementById("cart-msg").textContent = message;
+    localStorage.removeItem("logInMsg");
+
+    setTimeout(() => {
+      document.getElementById("cart-msg").style.transform = "translateX(380px)";
+    }, 3000);
+  }
+}
