@@ -125,3 +125,7 @@ button:active {
   transition: 0.7s ease-in-out;
   transform: translateX(380px);
 }
+
+body.dark-mode .input-field{
+  color: #fff;
+}
