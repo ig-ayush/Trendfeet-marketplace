@@ -45,3 +45,19 @@ main{
 }
 
 h2{padding: 10px;margin-left: 50px;}
+
+.logOut button{
+    width: 100px;
+    padding: 10px;
+    font-size: 1.1rem;
+    margin: 50px 0px 0px 30px;
+    font-weight: 500;
+    background-color: #fff;
+    transition: 0.4s;
+    &:hover{
+        color: #fff;
+        background-color: #1a1a1a;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+    }
+}

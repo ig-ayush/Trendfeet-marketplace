@@ -32,6 +32,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  let localData = localStorage.getItem("userInfo");
+  let userInfo = JSON.parse(localData);
+
+  let name = document.querySelector(".info h1");
+  let email = document.querySelector(".info h3");
+
+  name.textContent = userInfo.name;
+  email.textContent = userInfo.email;
+});
 const profile_pic = [
   "image-1.jpg",
   "image-2.jpg",
@@ -77,3 +87,11 @@ const view = (id) => {
   window.location.href = `../../Single-Product/SinglePRoduct.html?id=${id}`;
   console.log(id);
 };
+
+// Logout
+const logout = document.querySelector(".logOut button");
+
+logout.addEventListener("click", () => {
+  localStorage.removeItem("userInfo");
+  window.location.href = "../login.html";
+});

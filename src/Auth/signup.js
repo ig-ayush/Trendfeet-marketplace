@@ -54,19 +54,33 @@ const signUpBtn = document.getElementById("signUpBtn");
 signUpBtn.addEventListener("click", () => signUp());
 
 function signUp() {
+  let name = document.getElementById("name").value;
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
+  let conPassword = document.getElementById("copass").value;
 
+  if(password != conPassword){
+    alert("Password Mismatch");
+    return;
+  }
   auth
     .createUserWithEmailAndPassword(email, password)
     .then((userAuth) => {
       const user = userAuth.user;
       database.ref("users/" + user.uid).set({ email: user.email });
       console.log("User signed up:", user.email);
+      window.location.href = "login.html";
     })
     .then(() => {
       localStorage.setItem("signInMsg", " Welcome! Log in to continue. ✅ ");
-      window.location.href = "login.html";
+    })
+    .then(() => {
+      let userData = {
+        name: name,
+        email: email,
+      };
+      localStorage.setItem("userInfo",JSON.stringify(userData));
+      console.log("data saved");
     })
     .catch((error) => console.error("Signup error:", error.message));
 }
