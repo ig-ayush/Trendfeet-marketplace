@@ -6,24 +6,23 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("DOMContentLoaded", function () {
     const toggleSwitch = document.querySelector(".switch input");
     const body = document.body;
-
+  
     function enableDarkMode() {
       body.classList.add("dark-mode");
       localStorage.setItem("theme", "dark");
       toggleSwitch.checked = true;
     }
-
     function disableDarkMode() {
       body.classList.remove("dark-mode");
       localStorage.setItem("theme", "light");
       toggleSwitch.checked = false;
     }
-
+  
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme === "dark") {
       enableDarkMode();
     }
-
+  
     toggleSwitch.addEventListener("change", function () {
       if (this.checked) {
         enableDarkMode();

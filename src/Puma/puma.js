@@ -1,49 +1,43 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const toggleSwitch = document.querySelector(".switch input");
-    const body = document.body;
-  
-    // Function to enable dark mode
-    function enableDarkMode() {
-      body.classList.add("dark-mode");
-      localStorage.setItem("theme", "dark");
-      toggleSwitch.checked = true;
-    }
-  
-    // Function to disable dark mode (light mode)
-    function disableDarkMode() {
-      body.classList.remove("dark-mode");
-      localStorage.setItem("theme", "light");
-      toggleSwitch.checked = false;
-    }
-  
-    // Check local storage for theme preference
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
+  const toggleSwitch = document.querySelector(".switch input");
+  const body = document.body;
+
+  function enableDarkMode() {
+    body.classList.add("dark-mode");
+    localStorage.setItem("theme", "dark");
+    toggleSwitch.checked = true;
+  }
+  function disableDarkMode() {
+    body.classList.remove("dark-mode");
+    localStorage.setItem("theme", "light");
+    toggleSwitch.checked = false;
+  }
+
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    enableDarkMode();
+  }
+
+  toggleSwitch.addEventListener("change", function () {
+    if (this.checked) {
       enableDarkMode();
+    } else {
+      disableDarkMode();
     }
-  
-    // Event Listener for the Toggle Button
-    toggleSwitch.addEventListener("change", function () {
-      if (this.checked) {
-        enableDarkMode();
-      } else {
-        disableDarkMode();
-      }
-    });
   });
-  
-  //   All Products
-  
-  document.addEventListener("DOMContentLoaded", function () {
-    fetch("puma.json")
-      .then((response) => response.json())
-      .then((products) => {
-        let container = document.querySelector(".products");
-        console.log(container);
-  
-        container.innerHTML = products.map(
-          (product) =>
-            ` <div class="product">
+});
+//   All Products
+
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("puma.json")
+    .then((response) => response.json())
+    .then((products) => {
+      let container = document.querySelector(".products");
+      console.log(container);
+
+      container.innerHTML = products.map(
+        (product) =>
+          ` <div class="product">
                 <div class="image">
                   <img src="${product.images[0]}" alt="puma" />
                 </div>
@@ -53,13 +47,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h3 class="mrp style">MRP: ${product.price}</h3>
                 <button class="view" onclick="view(${product.id})">View</button>
               </div>`
-        );
-      })
-      .catch((error) => console.error("Error loading products", error));
-  });
-  
-  const view = (id) => {
-    window.location.href = `../Single-Product/SinglePRoduct.html?id=${id}`;
-    console.log(id);
-  };
-  
+      );
+    })
+    .catch((error) => console.error("Error loading products", error));
+});
+
+const view = (id) => {
+  window.location.href = `../Single-Product/SinglePRoduct.html?id=${id}`;
+  console.log(id);
+};
