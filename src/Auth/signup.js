@@ -59,7 +59,7 @@ function signUp() {
   let password = document.getElementById("password").value;
   let conPassword = document.getElementById("copass").value;
 
-  if(password != conPassword){
+  if (password != conPassword) {
     alert("Password Mismatch");
     return;
   }
@@ -67,6 +67,7 @@ function signUp() {
     .createUserWithEmailAndPassword(email, password)
     .then((userAuth) => {
       const user = userAuth.user;
+
       database.ref("users/" + user.uid).set({ email: user.email });
       console.log("User signed up:", user.email);
       window.location.href = "login.html";
@@ -79,8 +80,9 @@ function signUp() {
         name: name,
         email: email,
       };
-      localStorage.setItem("userInfo",JSON.stringify(userData));
+      localStorage.setItem("userInfo", JSON.stringify(userData));
       console.log("data saved");
     })
+
     .catch((error) => console.error("Signup error:", error.message));
 }

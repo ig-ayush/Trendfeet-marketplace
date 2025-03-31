@@ -92,6 +92,7 @@ const view = (id) => {
 const logout = document.querySelector(".logOut button");
 
 logout.addEventListener("click", () => {
-  localStorage.removeItem("userInfo");
+  // localStorage.removeItem("userInfo");
+  localStorage.removeItem("logIn");
   window.location.href = "../login.html";
 });

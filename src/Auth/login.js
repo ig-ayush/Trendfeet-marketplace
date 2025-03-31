@@ -33,12 +33,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const cart_msg = document.getElementById("cart-msg");
-  // let localData = localStorage.getItem("userInfo");
 
-  // if(localData){
-  //   window.location.href = "profile/profile.html";
-  // }
+  let LoggedIn = localStorage.getItem("logIn");
+  if(LoggedIn){
+    window.location.href = "profile/profile.html";
+  }
+  const cart_msg = document.getElementById("cart-msg");
+
   let message = localStorage.getItem("signInMsg");
   if (message) {
     cart_msg.style.transform = "translateX(0px)";
@@ -77,7 +78,9 @@ function LogIn() {
     .signInWithEmailAndPassword(email, password)
     .then((userCredential) => {
       console.log("User signed in:", userCredential.user.email);
+      
       window.location.href = "profile/profile.html";
+      localStorage.setItem("logIn", "Logged In");
     })
     .catch(() => {
       localStorage.setItem("logInMsg", "❌Invalid email or password.");
