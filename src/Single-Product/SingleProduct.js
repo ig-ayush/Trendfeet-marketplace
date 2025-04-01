@@ -102,7 +102,7 @@ function changeImageHome(image) {
 document.addEventListener("DOMContentLoaded", function () {
   const urlF = new URLSearchParams(window.location.search);
   const productID = urlF.get("id");
-
+  
   fetch("../Nike/nike.json")
     .then((response) => response.json())
     .then((products) => {
