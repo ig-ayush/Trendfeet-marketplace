@@ -76,6 +76,10 @@ function LogIn() {
       window.location.href = "profile/profile.html";
       localStorage.setItem("logIn", "Logged In");
     })
+    .catch(()=>{
+      const signInMethods = fetchSignInMethodsForEmail(auth, email);
+      console.log(signInMethods,"not login")
+    })
     .catch(() => {
       localStorage.setItem("logInMsg", "❌Invalid email or password.");
     });

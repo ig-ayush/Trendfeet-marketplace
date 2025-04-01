@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .catch((error) => console.error("Error loading products", error));
 });
 
-const view = (id) => {
+function view(id) {
   window.location.href = `../Single-Product/SinglePRoduct.html?id=${id}`;
   console.log(id);
-};
+}

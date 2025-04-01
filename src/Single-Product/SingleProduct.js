@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("DOMContentLoaded", function () {
     const toggleSwitch = document.querySelector(".switch input");
     const body = document.body;
-  
+
     function enableDarkMode() {
       body.classList.add("dark-mode");
       localStorage.setItem("theme", "dark");
@@ -17,12 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
       localStorage.setItem("theme", "light");
       toggleSwitch.checked = false;
     }
-  
+
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme === "dark") {
       enableDarkMode();
     }
-  
+
     toggleSwitch.addEventListener("change", function () {
       if (this.checked) {
         enableDarkMode();
@@ -117,7 +117,6 @@ document.addEventListener("DOMContentLoaded", function () {
           )
           .join("");
 
-
         document.getElementById("product-images").innerHTML = thumbnails;
 
         document.getElementById("brand").textContent = product.brand;
@@ -135,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .catch((error) => console.error("Error loading products", error));
 });
 
-// Adidas Page 
+// Adidas Page
 document.addEventListener("DOMContentLoaded", function () {
   const urlF = new URLSearchParams(window.location.search);
   const productID = urlF.get("id");
@@ -145,7 +144,9 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((products) => {
       let product = products.find((p) => p.id == productID);
       if (product) {
-        document.getElementById("one-img").src = `../adidas/${product.images[0]}`;
+        document.getElementById(
+          "one-img"
+        ).src = `../adidas/${product.images[0]}`;
         let thumbnails = product.images
           .map(
             (img) => `
@@ -154,11 +155,11 @@ document.addEventListener("DOMContentLoaded", function () {
           )
           .join("");
 
-
         document.getElementById("product-images").innerHTML = thumbnails;
 
         document.getElementById("brand").textContent = product.brand;
-        document.getElementById("product-name").textContent =product.product_name;
+        document.getElementById("product-name").textContent =
+          product.product_name;
         document.getElementById("disc").textContent = product.dis;
         document.getElementById("price").textContent = `MRP: ${product.price}`;
         document.getElementById("buy-now-link").href = product.link;
@@ -189,11 +190,11 @@ document.addEventListener("DOMContentLoaded", function () {
           )
           .join("");
 
-
         document.getElementById("product-images").innerHTML = thumbnails;
 
         document.getElementById("brand").textContent = product.brand;
-        document.getElementById("product-name").textContent =product.product_name;
+        document.getElementById("product-name").textContent =
+          product.product_name;
         document.getElementById("disc").textContent = product.dis;
         document.getElementById("price").textContent = `MRP: ${product.price}`;
         document.getElementById("buy-now-link").href = product.link;
@@ -207,7 +208,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 function changeImageNike(image) {
   const brand = document.getElementById("brand").textContent.toLowerCase(); // Get the brand name
-  
+
   if (brand === "nike") {
     document.getElementById("one-img").src = `../Nike/${image}`;
   } else if (brand === "adidas") {
@@ -221,35 +222,48 @@ function changeImageNike(image) {
 function addToCart(product) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  let exixtedProduct = cart.find(item => item.id == product.id);
+  let exixtedProduct = cart.find((item) => item.id == product.id);
+  let LoggedIn = localStorage.getItem("logIn");
 
   if (exixtedProduct) return;
 
-  if (product.id <= 8) {
-    product.images[0] = `../../${product.images[0]}`;
-  } else if (product.id <= 32) {
-    product.images[0] = `../Nike/${product.images[0]}`;
-  } else if (product.id <= 56) {
-    product.images[0] = `../adidas/${product.images[0]}`;
-  } else if(product.id <= 80){
-    product.images[0]=`../Puma/${product.images[0]}`;
+  if (LoggedIn) {
+    console.log("in");
+    if (product.id <= 8) {
+      product.images[0] = `../../${product.images[0]}`;
+    } else if (product.id <= 32) {
+      product.images[0] = `../Nike/${product.images[0]}`;
+    } else if (product.id <= 56) {
+      product.images[0] = `../adidas/${product.images[0]}`;
+    } else if (product.id <= 80) {
+      product.images[0] = `../Puma/${product.images[0]}`;
+    }
+    cart.push(product);
+    localStorage.setItem("cart", JSON.stringify(cart));
+  } else {
+    return;
   }
-  cart.push(product);
-  localStorage.setItem("cart", JSON.stringify(cart));
-
-
 }
 
-// add cart btn 
+// add cart btn
 const addCarttn = document.getElementById("cart");
 const cart_msg = document.getElementById("cart-msg");
 addCarttn.addEventListener("click", () => {
-
-  setTimeout(() => {
-    cart_msg.classList.add("click");
+  let LoggedIn = localStorage.getItem("logIn");
+  if (!LoggedIn) {
     setTimeout(() => {
-      cart_msg.classList.remove("click");
-    }, 2000);
-  },);
-})
-
+      cart_msg.classList.add("click");
+      cart_msg.textContent = "🛒Log in to add items to your cart.";
+      setTimeout(() => {
+        cart_msg.classList.remove("click");
+      }, 2500);
+    });
+  } else {
+    setTimeout(() => {
+      cart_msg.classList.add("click");
+      setTimeout(() => {
+        cart_msg.classList.remove("click");
+      }, 2000);
+    });
+  }
+});
