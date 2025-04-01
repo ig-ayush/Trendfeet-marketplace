@@ -1,5 +1,3 @@
-
-
 .container {
   margin-top: 100px;
   position: relative;
@@ -67,16 +65,16 @@
   width: max-content;
   padding: 15px;
   border: 1px solid;
-  transition: .3s ;
-  &:hover{
+  transition: 0.3s;
+  &:hover {
     background-color: #c9cbce;
   }
 }
 
-.product-details .buttons{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+.product-details .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 .product-details button {
   padding: 20px 35px 20px 35px;
@@ -84,42 +82,34 @@
   font-weight: 600;
 }
 
-.buttons #buy-now{
-    background-color: #000000;
-    color: #fff;
-    border: none;
-    transition: .7s;
-    &:hover{
-        background-color: #333434;
-        transform: translateX(-20px);
-    }
-}
-
-.buttons #cart{
-    background-color: #fff;
-    color: #000000;
-    transition: .7s;
-    &:hover{
-        background-color: #dadee3;
-        transform: translateX(20px);
-    }
-}
-
-.buttons a{
-    text-decoration: none;
-    color: #fff;
-}
-
-/* dark mode */
-body.dark-mode .main-image p{
+.buttons #buy-now {
   background-color: #000000;
   color: #fff;
-  border: 1px solid white;
+  border: none;
+  transition: 0.7s;
+  &:hover {
+    background-color: #333434;
+    transform: translateX(-20px);
+  }
+}
+
+.buttons #cart {
+  background-color: #fff;
+  color: #000000;
+  transition: 0.7s;
+  &:hover {
+    background-color: #dadee3;
+    transform: translateX(20px);
+  }
+}
+
+.buttons a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Cart message */
-
-.cart-msg{
+.cart-msg {
   position: absolute;
   top: 0;
   right: 0;
@@ -130,13 +120,18 @@ body.dark-mode .main-image p{
   height: max-content;
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
-  transition: .7s ease-in-out;
+  transition: 0.7s ease-in-out;
   transform: translateX(380px);
-  /* visibility: hidden; */
 }
 
-.click{
+/* dark mode */
+body.dark-mode .main-image p {
+  background-color: #000000;
+  color: #fff;
+  border: 1px solid white;
+}
+
+.click {
   visibility: visible;
   transform: translateX(0);
 }
-

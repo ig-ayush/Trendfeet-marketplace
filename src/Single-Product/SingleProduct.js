@@ -217,8 +217,6 @@ function changeImageNike(image) {
   }
 }
 
-
-
 // Add Cart section
 function addToCart(product) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];

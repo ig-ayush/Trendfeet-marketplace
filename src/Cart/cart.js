@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //   Products
-
 document.addEventListener("DOMContentLoaded", () => {
   displayCart();
 });

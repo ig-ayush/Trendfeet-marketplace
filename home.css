@@ -224,7 +224,6 @@ li {
 }
 
 /* Hero left side content */
-
 .hero .left-side-hero {
   z-index: 1000;
   position: relative;
@@ -256,7 +255,6 @@ li {
 }
 
 /* Brand section */
-
 .nike,
 .adidas,
 .puma {
@@ -356,7 +354,6 @@ li {
 }
 
 /* images and text for service section */
-
 .img-1 {
   background: url(Images/free-shipping.png);
   background-position: center;
@@ -398,21 +395,11 @@ li {
   border-radius: 3px;
 }
 
-.s-1 p {
-  background-color: #bfdbfe;
-}
-.s-2 p {
-  background-color: #fecaca;
-}
-.s-3 p {
-  background-color: #d8b4fe;
-}
-.s-4 p {
-  background-color: #60a5fa;
-}
-.s-5 p {
-  background-color: #bbf7d0;
-}
+.s-1 p {background-color: #bfdbfe;}
+.s-2 p {background-color: #fecaca;}
+.s-3 p {background-color: #d8b4fe;}
+.s-4 p {background-color: #60a5fa;}
+.s-5 p {background-color: #bbf7d0;}
 
 /* Product section */
 #product-heading {
@@ -543,7 +530,6 @@ body.dark-mode button {
   color: #000000;
 }
 
-/* Dark Mode Toggle Button */
 .switch input:checked + .slider {
   background-color: #0974f1;
 }

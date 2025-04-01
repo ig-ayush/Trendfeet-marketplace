@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//   DataBase -> Firebase
+//   Auth -> Firebase
 
 const firebaseConfig = {
   apiKey: "AIzaSyAGgWQ0JFmzv4xnN3_Vt5FPpMgJ62ivGPM",

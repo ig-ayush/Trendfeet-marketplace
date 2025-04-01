@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 3000);
   }
 });
-//   DataBase -> Firebase
+//   Auth -> Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyAGgWQ0JFmzv4xnN3_Vt5FPpMgJ62ivGPM",
   authDomain: "trendfeet-1d83e.firebaseapp.com",
