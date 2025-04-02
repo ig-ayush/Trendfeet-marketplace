@@ -102,7 +102,7 @@ function changeImageHome(image) {
 document.addEventListener("DOMContentLoaded", function () {
   const urlF = new URLSearchParams(window.location.search);
   const productID = urlF.get("id");
-  
+
   fetch("../Nike/nike.json")
     .then((response) => response.json())
     .then((products) => {
@@ -228,7 +228,6 @@ function addToCart(product) {
   if (exixtedProduct) return;
 
   if (LoggedIn) {
-    console.log("in");
     if (product.id <= 8) {
       product.images[0] = `../../${product.images[0]}`;
     } else if (product.id <= 32) {
@@ -263,7 +262,7 @@ addCarttn.addEventListener("click", () => {
       cart_msg.classList.add("click");
       setTimeout(() => {
         cart_msg.classList.remove("click");
-      }, 2000);
+      }, 2500);
     });
   }
 });
