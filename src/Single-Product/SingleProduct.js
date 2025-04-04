@@ -12,35 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
       localStorage.setItem("theme", "dark");
       toggleSwitch.checked = true;
     }
-    function disableDarkMode() {
-      body.classList.remove("dark-mode");
-      localStorage.setItem("theme", "light");
-      toggleSwitch.checked = false;
-    }
-
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      enableDarkMode();
-    }
-
-    toggleSwitch.addEventListener("change", function () {
-      if (this.checked) {
-        enableDarkMode();
-      } else {
-        disableDarkMode();
-      }
-    });
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggleSwitch = document.querySelector(".switch input");
-    const body = document.body;
-
-    function enableDarkMode() {
-      body.classList.add("dark-mode");
-      localStorage.setItem("theme", "dark");
-      toggleSwitch.checked = true;
-    }
 
     function disableDarkMode() {
       body.classList.remove("dark-mode");
@@ -206,6 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch((error) => console.error("Error loading products", error));
 });
+
 function changeImageNike(image) {
   const brand = document.getElementById("brand").textContent.toLowerCase(); // Get the brand name
 
@@ -219,6 +191,22 @@ function changeImageNike(image) {
 }
 
 // Add Cart section
+const firebaseConfig = {
+  apiKey: "AIzaSyAGgWQ0JFmzv4xnN3_Vt5FPpMgJ62ivGPM",
+  authDomain: "trendfeet-1d83e.firebaseapp.com",
+  databaseURL: "https://trendfeet-1d83e-default-rtdb.firebaseio.com",
+  projectId: "trendfeet-1d83e",
+  storageBucket: "trendfeet-1d83e.firebasestorage.app",
+  messagingSenderId: "45676543220",
+  appId: "1:45676543220:web:63190f9fc4feed9e8272a1",
+};
+// import { getFirestore, doc, setDoc } from "firebase/firestore";
+
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const db = firebase.database();
+console.log(firebase);
+
 function addToCart(product) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -239,11 +227,16 @@ function addToCart(product) {
     }
     cart.push(product);
     localStorage.setItem("cart", JSON.stringify(cart));
+
+    const user = auth.currentUser;
+    if (user) {
+      console.log(user.uid);
+      saveToFirebase(user.uid, cart);
+    }
   } else {
     return;
   }
 }
-
 // add cart btn
 const addCarttn = document.getElementById("cart");
 const cart_msg = document.getElementById("cart-msg");
@@ -266,3 +259,15 @@ addCarttn.addEventListener("click", () => {
     });
   }
 });
+
+// Adding Item to Firebase
+function saveToFirebase(uid, cartItems) {
+  const cartRef = db.collection("carts").doc(uid);
+  cartRef.set({ items: cartItems })
+    .then(() => {
+      console.log("✅ Cart saved to Firebase");
+    })
+    .catch((error) => {
+      console.error("❌ Error saving cart:", error);
+    });
+}
