@@ -28,6 +28,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+const firebaseConfig = {
+  apiKey: "AIzaSyAGgWQ0JFmzv4xnN3_Vt5FPpMgJ62ivGPM",
+  authDomain: "trendfeet-1d83e.firebaseapp.com",
+  databaseURL: "https://trendfeet-1d83e-default-rtdb.firebaseio.com",
+  projectId: "trendfeet-1d83e",
+  storageBucket: "trendfeet-1d83e.firebasestorage.app",
+  messagingSenderId: "45676543220",
+  appId: "1:45676543220:web:63190f9fc4feed9e8272a1",
+};
+
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const database = firebase.database();
+console.log(firebase);
+
 document.addEventListener("DOMContentLoaded", () => {
   let localData = localStorage.getItem("userInfo");
   let userInfo = JSON.parse(localData);
@@ -91,5 +106,16 @@ logout.addEventListener("click", () => {
   // localStorage.removeItem("userInfo");
   localStorage.removeItem("cart");
   localStorage.removeItem("logIn");
+  firebase
+    .auth()
+    .signOut()
+    .then(() => {
+      console.log("User signed out.");
+      // Now clear or update the UI
+    })
+    .catch((error) => {
+      console.error("Sign out error:", error);
+    });
+
   window.location.href = "../login.html";
 });
