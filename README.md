@@ -24,7 +24,7 @@ https://ig-ayush.github.io/Trendfeet-marketplace/
 
 ## Developed By:
 - Ayush Acharya
-- Veekshan Rai
+- Veekshan Rai - https://github.com/veekshan-rai
 
 ## License:
 This project is developed for educational purposes only.
