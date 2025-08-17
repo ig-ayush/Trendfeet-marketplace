@@ -72,3 +72,35 @@
     background-color: #fff;
     font-weight: 600;
 }
+
+@media (max-width: 1200px){
+  .products{
+    gap: 12px;
+  }
+}
+
+@media (max-width: 992px){
+  .products{
+    justify-content: center;
+    gap: 16px;
+  }
+  .product{
+    width: calc(50% - 12px);
+  }
+  .product .image,
+  .product .image img{
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px){
+  .product{
+    width: 100%;
+  }
+  .view{
+    right: 12px;
+  }
+  .new-arrivals-producs{
+    padding: 20px;
+  }
+}

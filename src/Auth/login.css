@@ -129,3 +129,35 @@ button:active {
 body.dark-mode .input-field{
   color: #fff;
 }
+
+@media (max-width: 768px){
+  .container-fluid{
+    height: auto;
+    padding: 20px;
+  }
+  .auth{
+    width: 95%;
+    height: auto;
+    padding: 20px;
+  }
+  .input-container{
+    margin: 14px 0;
+  }
+  .input-field{
+    width: 100%;
+  }
+  .input-field:focus + .input-label + .input-highlight{
+    width: 100%;
+  }
+  button{
+    margin-left: 0;
+    width: 100%;
+  }
+  .auth p{
+    margin-left: 0;
+  }
+  .cart-msg{
+    width: 90%;
+    right: 5%;
+  }
+}

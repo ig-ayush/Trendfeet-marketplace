@@ -533,3 +533,140 @@ body.dark-mode button {
 .switch input:checked + .slider {
   background-color: #0974f1;
 }
+
+.hero {
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    padding: 40px;
+  }
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 992px) {
+  nav {
+    height: auto;
+    padding: 8px 12px;
+    flex-wrap: wrap;
+  }
+  .left-content,
+  .right-content {
+    gap: 10px;
+  }
+  .left-content ul,
+  .right-content ul {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .logo img {
+    height: 48px;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: 70vh;
+    height: auto;
+    padding: 30px;
+  }
+  .hero p {
+    top: 40px;
+  }
+  .hero .left-side-hero {
+    top: 60px;
+    left: 0;
+  }
+  .brands {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .nike,
+  .adidas,
+  .puma {
+    width: 45%;
+  }
+  .services {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .service {
+    width: 30%;
+    height: auto;
+  }
+  footer {
+    height: auto;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 40px;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+  .hero .left-side-hero {
+    top: 40px;
+  }
+  .nike,
+  .adidas,
+  .puma {
+    width: 100%;
+  }
+  .brand-content{
+    bottom: 0;
+  }
+  .service {
+    width: 45%;
+  }
+  .service p {
+    margin-left: 0;
+    text-align: center;
+  }
+  .img {
+    height: 120px;
+  }
+  .footer-con {
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  .brand .explore img {
+    width: 64px;
+  }
+}
+
+@media (max-width: 576px) {
+  nav .left-content ul li,
+  nav .right-content ul li {
+    margin-right: 12px;
+  }
+  .hero {
+    padding: 20px;
+  }
+  .hero p {
+    top: 20px;
+  }
+  .left-side-hero button {
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .services {
+    margin: 30px 20px;
+  }
+  .service {
+    width: 100%;
+  }
+  .brand .explore {
+    flex-wrap: wrap;
+  }
+}
