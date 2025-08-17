@@ -61,3 +61,25 @@ h2{padding: 10px;margin-left: 50px;}
         transform: translateY(-2px);
     }
 }
+
+@media (max-width: 768px){
+    main{
+        padding: 20px;
+    }
+    .profile{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .pro-pic{
+        width: 80px;
+        height: 80px;
+    }
+    h2{
+        margin-left: 0;
+    }
+    .logOut button{
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+}

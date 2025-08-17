@@ -165,3 +165,52 @@ body.dark-mode #product-name,
 #brand {
   color: #000000;
 }
+
+@media (max-width: 1200px){
+  .container{
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+  }
+  .product{
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px){
+  .container{
+    grid-template-columns: 1fr;
+  }
+  .product{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  .product .image img{
+    width: 100%;
+    height: auto;
+  }
+  .details div{
+    grid-template-columns: 1fr 1fr;
+  }
+  .buttons{
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 576px){
+  .details{
+    padding: 16px 10px;
+  }
+  .buttons{
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .buttons button{
+    width: 100%;
+  }
+  .clear button{
+    width: 100%;
+  }
+}
